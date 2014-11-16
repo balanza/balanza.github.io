@@ -6,10 +6,11 @@
 name: Emanuele De Cupis
 
 # Short bio or description (displayed in the header)
-description: Software Designer
+description: but you may know me as Balanza
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars1.githubusercontent.com/u/265564?v=3&s=460
+#avatar: https://avatars1.githubusercontent.com/u/265564?v=3&s=460
+avatar: /images/logo.svg
 
 #
 # Flags below are optional
@@ -51,7 +52,7 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: pygments
-permalink: /:title/
+permalink: /articles/:title/
 
 # The release of Jekyll Now that you're using
 version: v1.0.0

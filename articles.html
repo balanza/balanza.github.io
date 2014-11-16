@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: /articles/
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">    
+      <a href="{{ site.baseurl }}{{ post.url }}">
+	      <h1>{{ post.title }}</h1>
+
+	      <div class="entry">
+	        {{ post.content | strip_html |truncatehtml | truncatewords: 30 }}
+	      </div>
+
+      </a>
+    </article>
+  {% endfor %}
+</div>

@@ -12,12 +12,19 @@ $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
-$white: #fff;
+$white: #fdfdfd;
+$green: #81b71a;
+
+$colorHover: $darkerGray;
+$colorHoverDark: $black;
 
 // Font stacks
+$ruda: "Ruda", Arial, sans-serif;
+$raleway: "Raleway", Arial, sans-serif;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$bonvenocflight: "bonvenocflight",Arial, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
