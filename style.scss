@@ -13,7 +13,7 @@
 
 $textFont: $helveticaNeue;
 $titleFont: $bonvenocflight;
-
+$markerColor: $purple;
 /**************/
 /* BASE RULES */
 /**************/
@@ -192,7 +192,7 @@ img {
     	&:hover{
 
     		path.slash, path.ex-mark {
-				fill: $green;
+				fill: $markerColor;
     		}
 	  	
   	}
@@ -257,7 +257,7 @@ nav {
     &:hover{
     	color: $darkGray;
     	border-bottom: 1px solid $lightGray;
-  		border-color: $green;
+  		border-color: $markerColor;
 
     }	
 
@@ -275,7 +275,7 @@ nav {
   margin-bottom: 0.3em;
   border-bottom: 1px solid $lightGray;
   &:hover{
-  	border-color: $green;
+  	border-color: $markerColor;
   }
 }
 
