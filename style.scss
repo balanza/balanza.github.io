@@ -322,11 +322,21 @@ footer {
     color: $markerColor;
 }
 
-p.comment  div {
+p.comment  {
     text-indent: 2em;
     color: $gray;
 }
 
+p.comment::before{
+	content: '/**';
+    color: $markerColor;
+    display: block;
+}
+p.comment::after{
+	content: '*/';
+    color: $markerColor;
+    display: block;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
