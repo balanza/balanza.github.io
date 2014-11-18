@@ -367,11 +367,12 @@ p.comment:last-child::after{
 
 .toolbox li{
 	display: inline-block;
-    width: 33%;
-    
+width: 28%;
+margin: 0 1%;
+padding: 0 0 1em 0;
+vertical-align: middle;
 }
 .toolbox li img{
-	max-width: 90%;
     margin: 0 auto;
     padding-bottom: 3px;
     
