@@ -20,12 +20,18 @@ $markerColor: $blue;
 
 html {
   font-size: 100%;
+  height: 100%
 }
 
 body {
 	background: $white;
   font: 18px/1.4 $textFont;
   color: $darkGray;
+  /* footer on bottom http://codepen.io/cbracco/pen/zekgx */
+  position: relative;
+  margin: 0;
+  padding-bottom: 4rem;
+  min-height: 100%;
 }
 
 .container {
@@ -153,6 +159,10 @@ img {
 //
 // .masthead
 //
+
+#main {
+	margin-bottom: 20px;
+}
 
 .wrapper-masthead {
   margin-bottom: 50px;
@@ -311,6 +321,14 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+  
+  
+  /* footer on bottom http://codepen.io/cbracco/pen/zekgx */
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
 }
 
 footer {
