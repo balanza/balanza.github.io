@@ -360,6 +360,28 @@ p.comment:last-child::after{
     margin-left: -1.2em;
 }
 
+.toolbox ul{
+	list-style: none;
+}
+
+
+.toolbox li{
+	display: inline-block;
+    width: 33%;
+    
+}
+.toolbox li img{
+	max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 3px;
+    
+    border-bottom: 1px solid transparent;
+    &:hover{
+    
+    border-bottom: 1px solid $markerColor;
+    }
+    
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
