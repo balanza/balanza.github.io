@@ -318,6 +318,10 @@ footer {
   text-align: center;
 }
 
+span.comment{
+	display: "block";
+    color: $markerColor;
+}
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
