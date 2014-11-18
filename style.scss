@@ -323,19 +323,18 @@ footer {
 }
 
 p.comment  {
-    text-indent: 2em;
     color: $gray;
     
-    padding: 0 2em;
+    padding: 0 3em;
 }
 
-p.comment::before{
+p.comment:first-child::before{
 	content: '/**';
     color: $markerColor;
     display: block;
     margin-left: -2em;
 }
-p.comment::after{
+p.comment:last-child::after{
 	content: '*/';
     color: $markerColor;
     display: block;
