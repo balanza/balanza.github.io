@@ -15,10 +15,10 @@
 &lt;p&gt;Alloy itself is meant to help developers implement best practices in project source management. By building an MVC layer over a classical Titanium project and with its extensive use of CommonJS’ module pattern, it drives developer to code reutilization.&lt;br /&gt;
 Built-in  solution to reuse code and keep development D.R.Y. are &lt;strong&gt;CommonJS modules&lt;/strong&gt; and &lt;strong&gt;Widgets&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h5 id=&quot;commonjs-modules&quot;&gt;CommonJS modules&lt;/h5&gt;
+&lt;h6 id=&quot;commonjs-modules&quot;&gt;CommonJS modules&lt;/h6&gt;
 &lt;p&gt;CommonJS is the standard &lt;em&gt;de facto&lt;/em&gt; for dependency injection in Javascript. It encapsulates functionalities, keeping code tidy and preventing &lt;em&gt;global scope flooding&lt;/em&gt; issues. More over, package managers like &lt;strong&gt;npm&lt;/strong&gt; make managing references extremely easy,  thus you can both reduce coupling and increase cohesion in your source. &lt;a href=&quot;http://code.tutsplus.com/tutorials/creating-titanium-mobile-modules-using-commonjs--mobile-16833&quot;&gt;Here&lt;/a&gt; you can learn how to create and reference CommonJS modules in Alloy. It’s also plenty of third party modules on &lt;a href=&quot;http://gitt.io/&quot;&gt;gitTio&lt;/a&gt;. &lt;/p&gt;
 
-&lt;h5 id=&quot;widgets&quot;&gt;Widgets&lt;/h5&gt;
+&lt;h6 id=&quot;widgets&quot;&gt;Widgets&lt;/h6&gt;
 &lt;p&gt;Widgets are meant to be reusable UI components. They’re basically an atomic Alloy MVC entity - a view, a controller, a stylesheet, optionally a model. They can grow in complexity by including other modules, controllers, views, libraries and widgets, but they often target simple solutions as they would become hard to costomize for the current project. &lt;a href=&quot;http://docs.appcelerator.com/titanium/3.0/#!/guide/Alloy_Widgets&quot;&gt;Here&lt;/a&gt;’s the official, documentation.&lt;/p&gt;
 
 &lt;h2 id=&quot;a-custom-approach&quot;&gt;A custom approach&lt;/h2&gt;
@@ -33,39 +33,40 @@ Built-in  solution to reuse code and keep development D.R.Y. are &lt;strong&gt;C
   &lt;li&gt;focus on the app I’m developing instead of the environment I’m building (that means: automate repetitive tasks).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;my-solution&quot;&gt;My solution&lt;/h3&gt;
 &lt;p&gt;What if I can reference some other projects’ repositories, define the files I want to use in my app and the ones I don’t, and keep them updated automatically? Well, that’s actually what I already do! &lt;/p&gt;
 
 &lt;p&gt;So let’s dive into it. &lt;/p&gt;
 
-&lt;h5 id=&quot;requirements&quot;&gt;Requirements&lt;/h5&gt;
+&lt;h6 id=&quot;requirements&quot;&gt;Requirements&lt;/h6&gt;
 &lt;p&gt;As you develop in Alloy, you’re already aware of almost everything we need: npm, Git, Titanium CLI - our &lt;em&gt;bread-n-butter&lt;/em&gt;. The very last thing is &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt;, which if you don’t know is the &lt;em&gt;state-of-the-art&lt;/em&gt; of task automation for javascript development. You may want to learn more about Grunt, but for the moment you are fine by executing this in your shell:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;npm install -g grunt-cli
+&lt;pre&gt;&lt;code&gt;!#markdown
+$ npm install -g grunt-cli
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This may need &lt;code&gt;sudo&lt;/code&gt; on certain systems, please &lt;a href=&quot;http://gruntjs.com/getting-started&quot;&gt;refer to docs&lt;/a&gt; for any doubt.&lt;/p&gt;
 
 &lt;p&gt;Now create an Alloy project (or pick an existing one), then create two files in the root folder, and name them &lt;code&gt;Gruntfile.js&lt;/code&gt; and &lt;code&gt;package.json&lt;/code&gt;. Leave the first empty for the moment, and in the second simply put:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;{	
-  		&quot;name&quot;: &quot;MyProject&quot;,
-  		&quot;version&quot;: &quot;0.0.0&quot;,
-  		&quot;description&quot;: &quot;&quot;,
-  		&quot;main&quot;: &quot;Gruntfile.js&quot;,
-  		&quot;dependencies&quot;: {},
-  		&quot;devDependencies&quot;: {
-  			&quot;grunt&quot;: &quot;~0.4.5&quot;,
-		&quot;grunt-git&quot;: &quot;https://github.com/balanza/grunt-git/tarball/master&quot;
-  		},
-  		&quot;author&quot;: &quot;&quot;,
-  		&quot;license&quot;: &quot;ISC&quot;
+&lt;pre&gt;&lt;code&gt;!#javascript
+{	
+  &quot;name&quot;: &quot;MyProject&quot;,
+  &quot;version&quot;: &quot;0.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;Gruntfile.js&quot;,
+  &quot;dependencies&quot;: {},
+  &quot;devDependencies&quot;: {
+	 &quot;grunt&quot;: &quot;~0.4.5&quot;,
+	 &quot;grunt-git&quot;: &quot;https://github.com/balanza/grunt-git/tarball/master&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;just run &lt;code&gt;npm install&lt;/code&gt; in the shell for installing dependencies.&lt;/p&gt;
 
-&lt;h5 id=&quot;addressing-submodules&quot;&gt;Addressing submodules&lt;/h5&gt;
+&lt;h6 id=&quot;addressing-submodules&quot;&gt;Addressing submodules&lt;/h6&gt;
 &lt;p&gt;Now we have to reference submodules. A Git submodules is, roughly, a repository cloned in a subfolder of your project and bound to the project’s repository. Is actually slighty more than that, but for the moment that’s all we need.
 Assuming your project is already a git repository, you can add a submodule in two ways:&lt;/p&gt;
 
@@ -74,16 +75,17 @@ Assuming your project is already a git repository, you can add a submodule in tw
   &lt;li&gt;
     &lt;p&gt;using command line, just exec&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; $ git submodule add &amp;lt;git@ ... &amp;gt; ./submodules/commonFiles
- $ cd ./submodules/commonFiles
- $ git checkout master
+    &lt;pre&gt;&lt;code&gt; !#markdown
+ 	$ git submodule add &amp;lt;git@ ... &amp;gt; ./submodules/commonFiles
+ 	$ cd ./submodules/commonFiles
+ 	$ git checkout master
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;From now on, every time we update our local project repository, submodule’s last changes will be downloaded into the &lt;code&gt;./submodules/commonFiles&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;h5 id=&quot;adding-automation&quot;&gt;Adding automation&lt;/h5&gt;
+&lt;h6 id=&quot;adding-automation&quot;&gt;Adding automation&lt;/h6&gt;
 &lt;p&gt;The following paragraph will let us build a grunt task that:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -93,7 +95,8 @@ Assuming your project is already a git repository, you can add a submodule in tw
 
 &lt;p&gt;You need to edit your &lt;code&gt;Gruntfile&lt;/code&gt;. The following is trivial  example I wrote. For the sake of simplicity there’s only one submodule, but they can obviously be more. Here’s the file you can copy&amp;amp;paste:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;/**
+&lt;pre&gt;&lt;code&gt;!#javascript
+/**
  * Gruntfile.js
  *
  * This file collects automated tasks for this Alloy app.
@@ -101,8 +104,6 @@ Assuming your project is already a git repository, you can add a submodule in tw
  *
  * @author Emanuele De Cupis (http://emanuele.decup.is)
  */
-
-
 module.exports = function(grunt) {
 
 	// you&#39;ll need these modules for correctly addressing folders and files
@@ -217,7 +218,8 @@ module.exports = function(grunt) {
 &lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
 &lt;p&gt;As the task is defined and registered in the &lt;code&gt;Gruntfile&lt;/code&gt;, we can perform submodules update every time by executing the following command in the root of our project:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ grunt update-commonFiles
+&lt;pre&gt;&lt;code&gt;!#markdown
+$ grunt update-commonFiles
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;As we defined, it automatically checkout the master branch, pull from remote repository and copy files for using them in our app.&lt;/p&gt;
@@ -225,7 +227,8 @@ module.exports = function(grunt) {
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;p&gt;I’ve shared a barebone example on my Github page. I’ve created an Alloy app named &lt;a href=&quot;https://github.com/balanza/reuse-code-alloy-repoB&quot;&gt;RepoB&lt;/a&gt; which make use of components from another app, &lt;a href=&quot;https://github.com/balanza/reuse-code-alloy-repoA&quot;&gt;RepoA&lt;/a&gt;. Those apps do actually nothing, they just serve as an example for what we were discussing in this article. To run the example, execute the following commands:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git clone git@github.com:balanza/reuse-code-alloy-repoB.git 
+&lt;pre&gt;&lt;code&gt;!#markdown
+$ git clone git@github.com:balanza/reuse-code-alloy-repoB.git 
 $ cd reuse-code-alloy-repoB
 $ npm install 
 $ grunt update-repoa

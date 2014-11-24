@@ -16,6 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/prism.css" />
     <link rel="alternate" type="application/rss+xml" title="Emanuele De Cupis - but you may know me as Balanza" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -127,6 +128,30 @@
         </footer>
       </div>
     </div>
+
+    <script type="text/javascript" src="/scripts/prism.js"></script>
+    <script type="text/javascript">
+      //https://gist.github.com/balanza/ff26089cd73960d188a7
+      (function(root){
+         // all &lt;pre&gt; elements
+          var pres = root.getElementsByTagName('pre');
+          
+          for(var i=0; i<pres.length; i++){
+              var pre = pres[i];
+              var code = pre.getElementsByTagName('code')[0];
+              var content = code.innerHTML.trim();
+            
+              if(content.indexOf('!#')==0){
+                  var ptn = /!#(\w+)\n/;
+                  var language = ptn.exec(content)[1];
+                  code.innerHTML = code.innerHTML.replace(ptn, '');
+                  code.className += " language-" + language;
+                  pre.className += " language-" + language;
+              }
+            
+          } 
+      })(document);
+    </script>
 
     
 

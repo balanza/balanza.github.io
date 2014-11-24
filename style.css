@@ -307,10 +307,20 @@ nav a {
     color: #666;
   }
 }
+nav a::before {
+  content: '//';
+  margin-right: 0.5em;
+}
 nav a:hover {
   color: #333;
-  border-bottom: 1px solid #eee;
-  border-color: #4183C4;
+  	/*border-bottom: 1px solid $lightGray;
+		border-color: $markerColor;*/
+}
+nav a:hover::before {
+  color: #4183C4;
+}
+nav a:hover::after {
+  color: #4183C4;
 }
 
 .posts > .post {
@@ -405,6 +415,36 @@ p.comment:last-child::after {
 }
 .toolbox li img:hover {
   border-bottom: 1px solid #4183C4;
+}
+
+.post h1::before {
+  content: '/** \a *  ';
+  /**/
+  white-space: pre;
+}
+.post h1::after {
+  content: '*/';
+  display: block;
+}
+.post h2::before, .post h3::before {
+  content: '/*';
+  /**/
+  margin-right: 0.5em;
+}
+.post h2::after, .post h3::after {
+  content: '*/';
+  /**/
+  margin-left: 0.5em;
+}
+.post h4::before, .post h5::before, .post h6::before {
+  content: '//';
+  margin-right: 0.5em;
+}
+.post h1:hover::before, .post h2:hover::before, .post h3:hover::before, .post h4:hover::before, .post h5:hover::before, .post h6:hover::before {
+  color: #4183C4;
+}
+.post h1:hover::after, .post h2:hover::after, .post h3:hover::after, .post h4:hover::after, .post h5:hover::after, .post h6:hover::after {
+  color: #4183C4;
 }
 
 /***********************/

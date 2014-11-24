@@ -16,6 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/prism.css" />
     <link rel="alternate" type="application/rss+xml" title="Emanuele De Cupis - but you may know me as Balanza" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -92,10 +93,10 @@
 <p>Alloy itself is meant to help developers implement best practices in project source management. By building an MVC layer over a classical Titanium project and with its extensive use of CommonJS’ module pattern, it drives developer to code reutilization.<br />
 Built-in  solution to reuse code and keep development D.R.Y. are <strong>CommonJS modules</strong> and <strong>Widgets</strong>.</p>
 
-<h5 id="commonjs-modules">CommonJS modules</h5>
+<h6 id="commonjs-modules">CommonJS modules</h6>
 <p>CommonJS is the standard <em>de facto</em> for dependency injection in Javascript. It encapsulates functionalities, keeping code tidy and preventing <em>global scope flooding</em> issues. More over, package managers like <strong>npm</strong> make managing references extremely easy,  thus you can both reduce coupling and increase cohesion in your source. <a href="http://code.tutsplus.com/tutorials/creating-titanium-mobile-modules-using-commonjs--mobile-16833">Here</a> you can learn how to create and reference CommonJS modules in Alloy. It’s also plenty of third party modules on <a href="http://gitt.io/">gitTio</a>. </p>
 
-<h5 id="widgets">Widgets</h5>
+<h6 id="widgets">Widgets</h6>
 <p>Widgets are meant to be reusable UI components. They’re basically an atomic Alloy MVC entity - a view, a controller, a stylesheet, optionally a model. They can grow in complexity by including other modules, controllers, views, libraries and widgets, but they often target simple solutions as they would become hard to costomize for the current project. <a href="http://docs.appcelerator.com/titanium/3.0/#!/guide/Alloy_Widgets">Here</a>’s the official, documentation.</p>
 
 <h2 id="a-custom-approach">A custom approach</h2>
@@ -110,39 +111,40 @@ Built-in  solution to reuse code and keep development D.R.Y. are <strong>CommonJ
   <li>focus on the app I’m developing instead of the environment I’m building (that means: automate repetitive tasks).</li>
 </ul>
 
-<h3 id="my-solution">My solution</h3>
 <p>What if I can reference some other projects’ repositories, define the files I want to use in my app and the ones I don’t, and keep them updated automatically? Well, that’s actually what I already do! </p>
 
 <p>So let’s dive into it. </p>
 
-<h5 id="requirements">Requirements</h5>
+<h6 id="requirements">Requirements</h6>
 <p>As you develop in Alloy, you’re already aware of almost everything we need: npm, Git, Titanium CLI - our <em>bread-n-butter</em>. The very last thing is <a href="http://gruntjs.com/">Grunt</a>, which if you don’t know is the <em>state-of-the-art</em> of task automation for javascript development. You may want to learn more about Grunt, but for the moment you are fine by executing this in your shell:</p>
 
-<pre><code>npm install -g grunt-cli
+<pre><code>!#markdown
+$ npm install -g grunt-cli
 </code></pre>
 
 <p>This may need <code>sudo</code> on certain systems, please <a href="http://gruntjs.com/getting-started">refer to docs</a> for any doubt.</p>
 
 <p>Now create an Alloy project (or pick an existing one), then create two files in the root folder, and name them <code>Gruntfile.js</code> and <code>package.json</code>. Leave the first empty for the moment, and in the second simply put:</p>
 
-<pre><code>{	
-  		"name": "MyProject",
-  		"version": "0.0.0",
-  		"description": "",
-  		"main": "Gruntfile.js",
-  		"dependencies": {},
-  		"devDependencies": {
-  			"grunt": "~0.4.5",
-		"grunt-git": "https://github.com/balanza/grunt-git/tarball/master"
-  		},
-  		"author": "",
-  		"license": "ISC"
+<pre><code>!#javascript
+{	
+  "name": "MyProject",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+	 "grunt": "~0.4.5",
+	 "grunt-git": "https://github.com/balanza/grunt-git/tarball/master"
+  },
+  "author": "",
+  "license": "ISC"
 }
 </code></pre>
 
 <p>just run <code>npm install</code> in the shell for installing dependencies.</p>
 
-<h5 id="addressing-submodules">Addressing submodules</h5>
+<h6 id="addressing-submodules">Addressing submodules</h6>
 <p>Now we have to reference submodules. A Git submodules is, roughly, a repository cloned in a subfolder of your project and bound to the project’s repository. Is actually slighty more than that, but for the moment that’s all we need.
 Assuming your project is already a git repository, you can add a submodule in two ways:</p>
 
@@ -151,16 +153,17 @@ Assuming your project is already a git repository, you can add a submodule in tw
   <li>
     <p>using command line, just exec</p>
 
-    <pre><code> $ git submodule add &lt;git@ ... &gt; ./submodules/commonFiles
- $ cd ./submodules/commonFiles
- $ git checkout master
+    <pre><code> !#markdown
+ 	$ git submodule add &lt;git@ ... &gt; ./submodules/commonFiles
+ 	$ cd ./submodules/commonFiles
+ 	$ git checkout master
 </code></pre>
   </li>
 </ol>
 
 <p>From now on, every time we update our local project repository, submodule’s last changes will be downloaded into the <code>./submodules/commonFiles</code> folder.</p>
 
-<h5 id="adding-automation">Adding automation</h5>
+<h6 id="adding-automation">Adding automation</h6>
 <p>The following paragraph will let us build a grunt task that:</p>
 
 <ol>
@@ -170,7 +173,8 @@ Assuming your project is already a git repository, you can add a submodule in tw
 
 <p>You need to edit your <code>Gruntfile</code>. The following is trivial  example I wrote. For the sake of simplicity there’s only one submodule, but they can obviously be more. Here’s the file you can copy&amp;paste:</p>
 
-<pre><code>/**
+<pre><code>!#javascript
+/**
  * Gruntfile.js
  *
  * This file collects automated tasks for this Alloy app.
@@ -178,8 +182,6 @@ Assuming your project is already a git repository, you can add a submodule in tw
  *
  * @author Emanuele De Cupis (http://emanuele.decup.is)
  */
-
-
 module.exports = function(grunt) {
 
 	// you'll need these modules for correctly addressing folders and files
@@ -294,7 +296,8 @@ module.exports = function(grunt) {
 <h3 id="usage">Usage</h3>
 <p>As the task is defined and registered in the <code>Gruntfile</code>, we can perform submodules update every time by executing the following command in the root of our project:</p>
 
-<pre><code>$ grunt update-commonFiles
+<pre><code>!#markdown
+$ grunt update-commonFiles
 </code></pre>
 
 <p>As we defined, it automatically checkout the master branch, pull from remote repository and copy files for using them in our app.</p>
@@ -302,7 +305,8 @@ module.exports = function(grunt) {
 <h3 id="example">Example</h3>
 <p>I’ve shared a barebone example on my Github page. I’ve created an Alloy app named <a href="https://github.com/balanza/reuse-code-alloy-repoB">RepoB</a> which make use of components from another app, <a href="https://github.com/balanza/reuse-code-alloy-repoA">RepoA</a>. Those apps do actually nothing, they just serve as an example for what we were discussing in this article. To run the example, execute the following commands:</p>
 
-<pre><code>$ git clone git@github.com:balanza/reuse-code-alloy-repoB.git 
+<pre><code>!#markdown
+$ git clone git@github.com:balanza/reuse-code-alloy-repoB.git 
 $ cd reuse-code-alloy-repoB
 $ npm install 
 $ grunt update-repoa
@@ -351,6 +355,30 @@ $ grunt update-repoa
         </footer>
       </div>
     </div>
+
+    <script type="text/javascript" src="/scripts/prism.js"></script>
+    <script type="text/javascript">
+      //https://gist.github.com/balanza/ff26089cd73960d188a7
+      (function(root){
+         // all &lt;pre&gt; elements
+          var pres = root.getElementsByTagName('pre');
+          
+          for(var i=0; i<pres.length; i++){
+              var pre = pres[i];
+              var code = pre.getElementsByTagName('code')[0];
+              var content = code.innerHTML.trim();
+            
+              if(content.indexOf('!#')==0){
+                  var ptn = /!#(\w+)\n/;
+                  var language = ptn.exec(content)[1];
+                  code.innerHTML = code.innerHTML.replace(ptn, '');
+                  code.className += " language-" + language;
+                  pre.className += " language-" + language;
+              }
+            
+          } 
+      })(document);
+    </script>
 
     
 
