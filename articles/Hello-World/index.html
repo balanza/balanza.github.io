@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>Emanuele De Cupis – but you may know me as Balanza</title>
+    <title>Reuse code in Alloy using Grunt and Git-submodules – Emanuele De Cupis – but you may know me as Balanza</title>
 
     <meta name="author" content="Emanuele De Cupis" />
     <meta name="description" content="but you may know me as Balanza">
@@ -81,21 +81,47 @@
     </div>
 
     <div id="main" role="main" class="container">
-      <div>
-  <p class="comment">
-    <span class="marker">@author&#9;emanuele de cupis</span><br/>
-    <span class="marker">@aka&#9;balanza</span><br/>
-      I design and code elegant software that help my customers develop their business. I handle a variety of technologies, and I use them to create useful mobile and desktop experiences. Here you can have a look at what I can do for you and your business.
-   
-  </p>
-  <p class="comment">
-    
+      <article class="post">
+  <h1>Reuse code in Alloy using Grunt and Git-submodules</h1>
 
-    Sometimes I like to share some <a class="marker" href="/articles">thoughts and ideas</a>, but I'd rather play rugby for <a class="marker" href="http://villarugby.com" target="_blank" >Villa Pamphili</a>, which is my club and my second home.
+  <div class="entry">
+    <p>Code reutilization is a key aspect of every project. </p>
 
-  </p>
+<p>Code reutilization is the business
+  write once (DRY)
+  tested code</p>
+
+<p>In this article we’ll cover different methods and tips for implementing best practices in code reutilization in Alloy, as it has been released. Then, we’ll walk throught a tecnique I often use in my projects, having very good </p>
+
+<h3 id="code-reutilization-in-alloy">Code reutilization in Alloy</h3>
+
+<p>Alloy itself is meant to help developers implement best practices in project source management. By building an MVC layer over a classical Titanium project and with its extensive use of CommonJS’ module pattern, it drives developer to code reutiliza.<br />
+Built-in  solution to reuse code and keep development DRY are:
+- CommonJS modules
+- Widgets
+CommonJS is the standard de facto for dependency injection in Java script.  It encapsulates functionalities, keeping code tidy and preventing global scope flooding (*) issue. More over, package managers like npm make managing references extremely easy,  thus you can both reduce coupling and increase cohesion in your source. Have you can learn how to create and reference CommonJS modules in Alloy. It’s also plenty of third party modules on gittio 
+Widgets are meant to be reusable UI components. They’re basically an atomic Alloy MVC entity - a view, a controller, a stylesheet, optionally a model. Although they can grow in complexity by including other modules, controllers, views, libraries and Widgets, They’re a limited to just one use (cioè sono un componente solo) </p>
+
+<p>Using submodules:
+  issues: want to reuse controller/view/model</p>
+
+<p>Custom: grunt
+  the problem
+  intoducing grunt
+  custom merge
+  drive throught: repo_a, repo_b</p>
+
+<p>Conclusion</p>
+
+
+  </div>
+
+  <div class="date">
+    Written on March  3, 2014
+  </div>
+
   
-</div>
+</article>
     </div>
 
     <div class="wrapper-footer">

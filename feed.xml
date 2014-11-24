@@ -1,21 +1,46 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Emanuele De Cupis</title>
+    <description>but you may know me as Balanza</description>
+    <link>http://balanza.github.io</link>
+    <atom:link href="http://balanza.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <title>Reuse code in Alloy using Grunt and Git-submodules</title>
+        <description>&lt;p&gt;Code reutilization is a key aspect of every project. &lt;/p&gt;
+
+&lt;p&gt;Code reutilization is the business
+  write once (DRY)
+  tested code&lt;/p&gt;
+
+&lt;p&gt;In this article we’ll cover different methods and tips for implementing best practices in code reutilization in Alloy, as it has been released. Then, we’ll walk throught a tecnique I often use in my projects, having very good &lt;/p&gt;
+
+&lt;h3 id=&quot;code-reutilization-in-alloy&quot;&gt;Code reutilization in Alloy&lt;/h3&gt;
+
+&lt;p&gt;Alloy itself is meant to help developers implement best practices in project source management. By building an MVC layer over a classical Titanium project and with its extensive use of CommonJS’ module pattern, it drives developer to code reutiliza.&lt;br /&gt;
+Built-in  solution to reuse code and keep development DRY are:
+- CommonJS modules
+- Widgets
+CommonJS is the standard de facto for dependency injection in Java script.  It encapsulates functionalities, keeping code tidy and preventing global scope flooding (*) issue. More over, package managers like npm make managing references extremely easy,  thus you can both reduce coupling and increase cohesion in your source. Have you can learn how to create and reference CommonJS modules in Alloy. It’s also plenty of third party modules on gittio 
+Widgets are meant to be reusable UI components. They’re basically an atomic Alloy MVC entity - a view, a controller, a stylesheet, optionally a model. Although they can grow in complexity by including other modules, controllers, views, libraries and Widgets, They’re a limited to just one use (cioè sono un componente solo) &lt;/p&gt;
+
+&lt;p&gt;Using submodules:
+  issues: want to reuse controller/view/model&lt;/p&gt;
+
+&lt;p&gt;Custom: grunt
+  the problem
+  intoducing grunt
+  custom merge
+  drive throught: repo_a, repo_b&lt;/p&gt;
+
+&lt;p&gt;Conclusion&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 03 Mar 2014 00:00:00 +0100</pubDate>
+        <link>http://balanza.github.io/articles/Hello-World/</link>
+        <guid isPermaLink="true">http://balanza.github.io/articles/Hello-World/</guid>
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
