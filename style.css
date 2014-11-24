@@ -134,12 +134,12 @@ p {
 }
 
 a {
-  color: #666;
+  color: #333;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #222;
+  color: #000;
 }
 a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6, a:active h1, a:active h2, a:active h3, a:active h4, a:active h5, a:active h6 {
   color: #4183C4;
@@ -417,6 +417,16 @@ p.comment:last-child::after {
   border-bottom: 1px solid #4183C4;
 }
 
+.post p {
+  line-height: 1.4em;
+}
+.post a {
+  border-bottom: 2px dotted;
+  padding-bottom: 0.05em;
+}
+.post a:hover {
+  border-bottom-color: #4183C4;
+}
 .post h1::before {
   content: '/** \a *  ';
   /**/
@@ -439,6 +449,9 @@ p.comment:last-child::after {
 .post h4::before, .post h5::before, .post h6::before {
   content: '//';
   margin-right: 0.5em;
+}
+.post h1:hover, .post h2:hover, .post h3:hover, .post h4:hover, .post h5:hover, .post h6:hover {
+  color: #000;
 }
 .post h1:hover::before, .post h2:hover::before, .post h3:hover::before, .post h4:hover::before, .post h5:hover::before, .post h6:hover::before {
   color: #4183C4;
