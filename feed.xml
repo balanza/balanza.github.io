@@ -7,6 +7,109 @@
     <atom:link href="http://balanza.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Titanium HowTo&amp;#58; Facebook Single Sign On</title>
+        <description>&lt;p&gt;So you wanna integrate Facebook into your new fancy Titanium App, right? Sign your users in with the social from Menlo Park and simply get data straight from their profiles, as seen in thousands other apps in the store. 
+That’s why you red &lt;a href=&quot;http://docs.appcelerator.com/titanium/3.0/#!/api/Modules.Facebook&quot;&gt;how to include Titanium.Facebook module&lt;/a&gt;, and you dove into &lt;a href=&quot;https://developers.facebook.com/apps/&quot;&gt;creating a Facebook App&lt;/a&gt;. It’s easy. It’s so easy. But you can’t get it to work, and that’s annoying. &lt;/p&gt;
+
+&lt;h2 id=&quot;its-still-easy&quot;&gt;It’s still easy&lt;/h2&gt;
+&lt;p&gt;The problem is that most of the documentation you read is not meant for Titanium developers, they just rely on Java or Swift/ObjectiveC environments. You have to fill by yourself the gap between those environments, and you may be missing something about how Titanium works under the hood. &lt;/p&gt;
+
+&lt;p&gt;Here’s a Titanium-taylored &lt;em&gt;how to&lt;/em&gt; for implementing Facebook into your Android and iOS App.&lt;/p&gt;
+
+&lt;h2 id=&quot;facebook-app&quot;&gt;Facebook App&lt;/h2&gt;
+&lt;p&gt;First thing to do is to create a Facebook App which is authorized to use Facebook’s Graph. Go to &lt;a href=&quot;https://developers.facebook.com/&quot;&gt;developers.facebook.com&lt;/a&gt; and select &lt;code&gt;My Apps -&amp;gt; Add a New App&lt;/code&gt; from the upper menu. A modal will prompt asking you to choose which platform your new app will refer to: 
+&lt;img src=&quot;/assets/01.png&quot; alt=&quot;Select one platform between iOS and Android&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Choose one between Android and iOS. You can add the other one later.
+You now enter the name of your application, select category and finally create your App ID:
+&lt;img src=&quot;/assets/02.png&quot; alt=&quot;Enter your app name&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now navigate back to &lt;a href=&quot;https://developers.facebook.com/apps&quot;&gt;developers.facebook.com/apps&lt;/a&gt; and you’ll se you app in the list.&lt;/p&gt;
+
+&lt;h2 id=&quot;titanium-app&quot;&gt;Titanium App&lt;/h2&gt;
+&lt;p&gt;As described in docs, in your &lt;code&gt;tiapp.xml&lt;/code&gt; just add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; !#xml
+ &amp;lt;property name=&quot;ti.facebook.appid&quot;&amp;gt;FACEBOOK_APP_ID&amp;lt;/property&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(paste your app id) and &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;!#xml
+&amp;lt;modules&amp;gt;
+	&amp;lt;!-- Add the appropriate line(s) to your modules section --&amp;gt;
+	&amp;lt;module platform=&quot;android&quot;&amp;gt;facebook&amp;lt;/module&amp;gt;
+	&amp;lt;module platform=&quot;iphone&quot;&amp;gt;facebook&amp;lt;/module&amp;gt;
+&amp;lt;/modules&amp;gt; Your mobile App is now ready fo using Facebook, but you still need to configure for both platforms.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;configure-for-ios&quot;&gt;Configure for iOS&lt;/h2&gt;
+&lt;p&gt;From your &lt;a href=&quot;https://developers.facebook.com/apps&quot;&gt;Facebook application list&lt;/a&gt;, select your application and then, in the side menu, select &lt;code&gt;Settings&lt;/code&gt;.
+Click on &lt;code&gt;+ Add Plaform&lt;/code&gt;.
+&lt;img src=&quot;/assets/03.png&quot; alt=&quot;Add a platform&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;then select &lt;code&gt;iOS&lt;/code&gt; and a simple form will appear.
+&lt;img src=&quot;/assets/04.png&quot; alt=&quot;Select the platform&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill the &lt;code&gt;Bundle ID&lt;/code&gt; field with your Titanium App’s &lt;code&gt;id&lt;/code&gt; (the one in the &lt;code&gt;tiapp.xml&lt;/code&gt;) and switch the &lt;code&gt;Single Sign On&lt;/code&gt; option &lt;strong&gt;on&lt;/strong&gt;. For the sake of development, you’re done. 
+&lt;img src=&quot;/assets/05.png&quot; alt=&quot;Fill in values&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Don’t forget to press &lt;code&gt;Save Changes&lt;/code&gt; at the bottom of the page.&lt;/p&gt;
+
+&lt;h2 id=&quot;configure-for-android&quot;&gt;Configure for Android&lt;/h2&gt;
+&lt;p&gt;From your &lt;a href=&quot;https://developers.facebook.com/apps&quot;&gt;Facebook application list&lt;/a&gt;, select your application and then, in the side menu, select &lt;code&gt;Settings&lt;/code&gt;.
+Click on &lt;code&gt;+ Add Plaform&lt;/code&gt;:
+&lt;img src=&quot;/assets/03.png&quot; alt=&quot;Add a platform&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then select &lt;code&gt;Android&lt;/code&gt; and a simple form will appear:
+&lt;img src=&quot;/assets/04.png&quot; alt=&quot;Select the platform&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is less intuitive than &lt;code&gt;iOS&lt;/code&gt;, and resulted in hours spent investigating the first time you do it for &lt;code&gt;Android&lt;/code&gt;. You need to provide some information about your App:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;Google Play Package Name&lt;/code&gt; - the Titanium App’s &lt;code&gt;id&lt;/code&gt;, the one in the &lt;code&gt;tiapp.xml&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Class Name&lt;/code&gt; - the Android App’s Main Activity. You can find it by navigate your Titanium project folder to &lt;code&gt;/build/android/gen/your/app/id/&lt;/code&gt;, and you’ll see a file in the form &lt;code&gt;YourAppActivity.java&lt;/code&gt;. Remeber to provide the fully qualified class name for the activity, &lt;code&gt;your.app.id.YourAppActivity&lt;/code&gt;. In the example app, the fully qualified class name is &lt;code&gt;is.decup.blog.fbintegration.FbIntegrationActivity&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code&gt;Key Hashes&lt;/code&gt; - that’s probably the trickiest and less documented part. It actually depends on the &lt;em&gt;keystore&lt;/em&gt; you are using to sign your apk, but at development time you would often use the default one. In Facebook’s docs they refer to &lt;code&gt;androiddebugkey&lt;/code&gt; located in &lt;code&gt;~/.android/debug.keystore&lt;/code&gt;, but that’s not working. &lt;strong&gt;You must deal with the fact that Titanium SDK ships its own &lt;em&gt;keystore&lt;/em&gt;&lt;/strong&gt; and that’s the one you need to refer. You can get &lt;code&gt;Key Hashes&lt;/code&gt; by opening &lt;code&gt;terminal&lt;/code&gt; and run (on MacOSX)&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  !#bash
+  $ cd ~/Library/Application\ Support/Titanium/mobilesdk/osx/&amp;lt;Titanium SDK version&amp;gt;/android/
+    $ keytool -exportcert -alias tidev -keystore ./dev_keystore | openssl sha1 -binary | openssl base64
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;The location depends on which &lt;code&gt;Titanium SDK&lt;/code&gt; version you are using. &lt;code&gt;tidev&lt;/code&gt; is the alias you would use, while 	&lt;code&gt;tirocks&lt;/code&gt; is the password (as found &lt;a href=&quot;https://developer.appcelerator.com/question/123704/what-keystore-does-titanium-studio-use-to-build-android-app-during-development&quot;&gt;here&lt;/a&gt;). Run the shell command and copy&amp;amp;paste the result into &lt;code&gt;Key Hashes&lt;/code&gt; field.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You now should have something similar to this:
+&lt;img src=&quot;/assets/06.png&quot; alt=&quot;Fill in values&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, for the sake of development, you’re done. 
+Don’t forget to press &lt;code&gt;Save Changes&lt;/code&gt; at the bottom of the page.&lt;/p&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&quot;https://github.com/balanza/is.decup.blog.FbIntegration&quot;&gt;this repository&lt;/a&gt; you can find an example Titanium App that perform Facebook authentication on Android and iOS. The App is trivial, just let me mention this line in &lt;code&gt;app/controllers/index.js&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;!#javascript
+var FB = require(&#39;facebook&#39;);
+FB.appid = Ti.App.Properties.getString(&#39;ti.facebook.appid&#39;); 
+FB.permissions = [&#39;email&#39;, &#39;public_profile&#39;];
+FB.forceDialogAuth = false;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;FB.permissions&lt;/code&gt; need to refer to &lt;em&gt;read only&lt;/em&gt; permissions in order to login. If you need writing privileges, you need to &lt;em&gt;reauthorize&lt;/em&gt; your app after login. Please refer to the &lt;a href=&quot;https://developers.facebook.com/docs/facebook-login/permissions/&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;FB.forceDialogAuth = false&lt;/code&gt; let you use &lt;code&gt;Single Sign On&lt;/code&gt; authentication process. That said, no need to use a &lt;em&gt;modal web panel&lt;/em&gt; requesting your Facebook credentials.&lt;/p&gt;
+
+&lt;p&gt;To get the app to work, just fork it and change &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;ti.facebook.appid&lt;/code&gt; in &lt;code&gt;tiapp.xml&lt;/code&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 26 Jan 2015 00:00:00 +0100</pubDate>
+        <link>http://balanza.github.io/articles/howto-titanium-facebook-single-sign-on/</link>
+        <guid isPermaLink="true">http://balanza.github.io/articles/howto-titanium-facebook-single-sign-on/</guid>
+      </item>
+    
+      <item>
         <title>Reuse code in Alloy&amp;#58; a custom solution</title>
         <description>&lt;p&gt;Code reutilization is a key aspect of every project, helping developers keeping their code tidy and well tested. With this article I want to share a technique I often use in my Titanium Alloy projects for reusing components, libraries, widgets and assets in different mobile applications.   &lt;/p&gt;
 
