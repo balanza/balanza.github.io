@@ -95,7 +95,7 @@ That’s why you red <a href="http://docs.appcelerator.com/titanium/3.0/#!/api/M
 <p>Here’s a Titanium-taylored <em>how to</em> for implementing Facebook into your Android and iOS App.</p>
 
 <h2 id="facebook-app">Facebook App</h2>
-<p>First thing to do is to create a Facebook App which is authorized to use Facebook’s Graph. Go to <a href="https://developers.facebook.com/">developers.facebook.com</a> and select <code>My Apps -&gt; Add a New App</code> from the upper menu. A modal will prompt asking you to choose which platform your new app will refer to: 
+<p>First thing to do is to create a Facebook App which is authorized to use Facebook’s Graph. Go to <a href="https://developers.facebook.com/">developers.facebook.com</a> and select <code>My Apps &gt; Add a New App</code> from the upper menu. A modal will prompt asking you to choose which platform your new app will refer to: 
 <img src="/assets/01.png" alt="Select one platform between iOS and Android" /></p>
 
 <p>Choose one between Android and iOS. You can add the other one later.
@@ -175,7 +175,7 @@ FB.permissions = ['email', 'public_profile'];
 FB.forceDialogAuth = false;
 </code></pre>
 
-<p><code>FB.permissions</code> need to refer to <em>read only</em> permissions in order to login. If you need writing privileges, you need to <em>reauthorize</em> your app after login. Please refer to the <a href="https://developers.facebook.com/docs/facebook-login/permissions/">official documentation</a>.</p>
+<p><code>FB.permissions</code> needs to refer to <em>read only</em> permissions in order to login. If you need writing privileges, you need to <em>reauthorize</em> your app after login. Please refer to the <a href="https://developers.facebook.com/docs/facebook-login/permissions/">official documentation</a>.</p>
 
 <p><code>FB.forceDialogAuth = false</code> let you use <code>Single Sign On</code> authentication process. That said, no need to use a <em>modal web panel</em> requesting your Facebook credentials.</p>
 
