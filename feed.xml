@@ -17,7 +17,7 @@ That’s why you red &lt;a href=&quot;http://docs.appcelerator.com/titanium/3.0/
 &lt;p&gt;Here’s a Titanium-taylored &lt;em&gt;how to&lt;/em&gt; for implementing Facebook into your Android and iOS App.&lt;/p&gt;
 
 &lt;h2 id=&quot;facebook-app&quot;&gt;Facebook App&lt;/h2&gt;
-&lt;p&gt;First thing to do is to create a Facebook App which is authorized to use Facebook’s Graph. Go to &lt;a href=&quot;https://developers.facebook.com/&quot;&gt;developers.facebook.com&lt;/a&gt; and select &lt;code&gt;My Apps -&amp;gt; Add a New App&lt;/code&gt; from the upper menu. A modal will prompt asking you to choose which platform your new app will refer to: 
+&lt;p&gt;First thing to do is to create a Facebook App which is authorized to use Facebook’s Graph. Go to &lt;a href=&quot;https://developers.facebook.com/&quot;&gt;developers.facebook.com&lt;/a&gt; and select &lt;code&gt;My Apps &amp;gt; Add a New App&lt;/code&gt; from the upper menu. A modal will prompt asking you to choose which platform your new app will refer to: 
 &lt;img src=&quot;/assets/01.png&quot; alt=&quot;Select one platform between iOS and Android&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Choose one between Android and iOS. You can add the other one later.
@@ -97,7 +97,7 @@ FB.permissions = [&#39;email&#39;, &#39;public_profile&#39;];
 FB.forceDialogAuth = false;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;code&gt;FB.permissions&lt;/code&gt; need to refer to &lt;em&gt;read only&lt;/em&gt; permissions in order to login. If you need writing privileges, you need to &lt;em&gt;reauthorize&lt;/em&gt; your app after login. Please refer to the &lt;a href=&quot;https://developers.facebook.com/docs/facebook-login/permissions/&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FB.permissions&lt;/code&gt; needs to refer to &lt;em&gt;read only&lt;/em&gt; permissions in order to login. If you need writing privileges, you need to &lt;em&gt;reauthorize&lt;/em&gt; your app after login. Please refer to the &lt;a href=&quot;https://developers.facebook.com/docs/facebook-login/permissions/&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;FB.forceDialogAuth = false&lt;/code&gt; let you use &lt;code&gt;Single Sign On&lt;/code&gt; authentication process. That said, no need to use a &lt;em&gt;modal web panel&lt;/em&gt; requesting your Facebook credentials.&lt;/p&gt;
 
