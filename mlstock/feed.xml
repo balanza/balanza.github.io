@@ -9,23 +9,6 @@
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
-      <title>Testing Stock Market Efficiency Using Historical Trading Data and Machine Learning</title>
-      <link>http://emanuele.decup.is/mlstock//mlstock/articles/012/</link>
-      <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/012/</guid>
-      <author></author>
-      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;SAMI PURMONEN, PAUL GRIFFIN&lt;/p&gt;
-&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
-&lt;p&gt;2015&lt;/p&gt;
-&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
-&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
-&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
-&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
-&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
-</description>
-    </item>
-    <item>
       <title>Biclustering Learning of Trading Rules</title>
       <link>http://emanuele.decup.is/mlstock//mlstock/articles/010/</link>
       <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
@@ -41,6 +24,23 @@
 &lt;p&gt;Classificazione Nearest Neighborhood &lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 &lt;p&gt;La classificazione ottenuta ha performance migliori rispetto a &lt;em&gt;buy&amp;amp;hold&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Testing Stock Market Efficiency Using Historical Trading Data and Machine Learning</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/012/</link>
+      <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/012/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;SAMI PURMONEN, PAUL GRIFFIN&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 </description>
     </item>
     <item>
@@ -138,13 +138,13 @@
 </description>
     </item>
     <item>
-      <title>Stream-based active learning for sentiment analysis in the financial domain</title>
-      <link>http://emanuele.decup.is/mlstock//mlstock/articles/015/</link>
+      <title>Sentiment Analysis for Financial Applications - Combining Machine Learning, Computational Linguistics, and Statistical Methods for Predicting Stock Price Behavior</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/013/</link>
       <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/015/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/013/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;Smailović Jasmina, Grčar Miha, Lavrač Nada, Žnidaršič Martin&lt;/p&gt;
+&lt;p&gt;Lars Smørås Høysæter, Pål-Christian S Njølstad&lt;/p&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2014&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
@@ -155,13 +155,13 @@
 </description>
     </item>
     <item>
-      <title>Sentiment Analysis for Financial Applications - Combining Machine Learning, Computational Linguistics, and Statistical Methods for Predicting Stock Price Behavior</title>
-      <link>http://emanuele.decup.is/mlstock//mlstock/articles/013/</link>
+      <title>Stream-based active learning for sentiment analysis in the financial domain</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/015/</link>
       <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/013/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/015/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;Lars Smørås Høysæter, Pål-Christian S Njølstad&lt;/p&gt;
+&lt;p&gt;Smailović Jasmina, Grčar Miha, Lavrač Nada, Žnidaršič Martin&lt;/p&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2014&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
