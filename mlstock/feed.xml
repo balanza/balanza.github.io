@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning for Stock Markets</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>Analisi dello stato attuale della ricerca di metodo di machine learning legati ai mercati finanziari</description>
+    <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Biclustering Learning of Trading Rules</title>
+      <link>http://localhost:8080/articles/010/</link>
+      <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/010/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Huang Qinghua, Wang Ting, Tao Dacheng, Li Xuelong&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Viene eseguito data mining sui dati di mercato e sugli indicatori di analisi tecnica per ottenere una classificazione della &lt;em&gt;time series&lt;/em&gt; in termini di azioni &lt;em&gt;buy&lt;/em&gt;, &lt;em&gt;sell&lt;/em&gt; e &lt;em&gt;no-action&lt;/em&gt;. Vengono eseguite delle simulazioni e vengono confrontati i risultati con analoghe simulazioni effettuate con metodi &lt;em&gt;buy&amp;amp;hold&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Classificazione Nearest Neighborhood &lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;La classificazione ottenuta ha performance migliori rispetto a &lt;em&gt;buy&amp;amp;hold&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Testing Stock Market Efficiency Using Historical Trading Data and Machine Learning</title>
+      <link>http://localhost:8080/articles/012/</link>
+      <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/012/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;SAMI PURMONEN, PAUL GRIFFIN&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Stock trading rule discovery with an evolutionary trend following model</title>
+      <link>http://localhost:8080/articles/002/</link>
+      <pubDate>Thu, 01 Oct 2015 15:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/002/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Yong Hu, Bin Feng b, Xiangzhou Zhang, E.W.T. Ngai, Mei Liu,&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015 &lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Utilizzo ibrido di classificatori automatici e analisi tecnica &lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;XCS (eXtended Classifier System) + Technical Analysis&lt;/p&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Indice_di_Sortino&quot;&gt;Sortino ratio&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Differenti indici sul mercato di Shangai, dati giornalieri su 15 anni&lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NN &amp;gt; Bayes per dati continui&lt;/li&gt;
+&lt;li&gt;Bayes &amp;gt; NN per trend su dati storici&lt;/li&gt;
+&lt;li&gt;Movement prediction 100%&lt;/li&gt;
+&lt;li&gt;Price prediction 97%&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Stock Market Prediction using Social Media Analysis</title>
+      <link>http://localhost:8080/articles/006/</link>
+      <pubDate>Sun, 26 Apr 2015 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/006/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;OSCAR ALSING, OKTAY BAHCECI&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>On predictability of rare events leveraging social media: a machine learning perspective</title>
+      <link>http://localhost:8080/articles/017/</link>
+      <pubDate>Fri, 20 Feb 2015 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/017/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Lei Le, Emilio Ferrara, Alessandro Flammini&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Coupling news sentiment with web browsing data predicts intra-day stock prices</title>
+      <link>http://localhost:8080/articles/008/</link>
+      <pubDate>Mon, 05 Jan 2015 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/008/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Gabriele Ranco, Ilaria Bordino, Giacomo Bormetti, Guido Caldarelli, Fabrizio Lillo and Michele Treccani&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Machine Learning Application for Stock Market Prices Prediction</title>
+      <link>http://localhost:8080/articles/020/</link>
+      <pubDate>Sun, 12 Oct 2014 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/020/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;C. Ugwu, OnwuachuUzochukwu C&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Stream-based active learning for sentiment analysis in the financial domain</title>
+      <link>http://localhost:8080/articles/015/</link>
+      <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/015/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Smailović Jasmina, Grčar Miha, Lavrač Nada, Žnidaršič Martin&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Sentiment Analysis for Financial Applications - Combining Machine Learning, Computational Linguistics, and Statistical Methods for Predicting Stock Price Behavior</title>
+      <link>http://localhost:8080/articles/013/</link>
+      <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/013/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Lars Smørås Høysæter, Pål-Christian S Njølstad&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>News impact on stock price return via sentiment analysis</title>
+      <link>http://localhost:8080/articles/003/</link>
+      <pubDate>Sat, 26 Apr 2014 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/003/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Xiaodong Li, Haoran Xie, Li Chen, Jianping Wang, Xiaotie Deng &lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Si valuta l’utilizzo di classificazione di notizie basate su &lt;em&gt;sentiment&lt;/em&gt; e si confrontano i risultati con analoghe misurazioni effettuate con metodologie &lt;em&gt;bag-of-words&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Le notizie vengono proiettate nello spazio dei &lt;em&gt;sentiment&lt;/em&gt; definito dai differenti dizionari usati. 
+Le informazioni ottenute vengono poi unite a informazioni basate sui valori di mercato (&lt;em&gt;open price, close price&lt;/em&gt;) e processate tramite un algoritmo di tipo Support Vector Machine, per ottenere valutazioni di acquisto e vendita.&lt;/p&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;5 anni di notizie dal sito finet.hk (in inglese), periodo Gennaio 2003 - Marzo 2008.
+Si usano inoltre 2 dizionari di parole costruiti a mano:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Harvard IV-4 sentiment dictionary&lt;/li&gt;
+&lt;li&gt;Loughran and McDonald financial sentiment dictionary&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;L’analisi del &lt;em&gt;sentiment&lt;/em&gt; migliora la precisione della previsione, con risultati migliori rispetto a &lt;em&gt;bag-of-words&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Simply focusing on positive and negative dimensions could not
+bring useful predictions. The models which use sentiment
+polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;La differenza tra l’uso dei due dizionari in esame è trascurabile&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Impact of Financial News Headline and Content to Market Sentiment</title>
+      <link>http://localhost:8080/articles/016/</link>
+      <pubDate>Tue, 01 Apr 2014 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/016/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Tan Li, Phang Wai, Chin Kim, Rayner, Patricia&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>A Machine Learning Model for Stock Market Prediction</title>
+      <link>http://localhost:8080/articles/018/</link>
+      <pubDate>Thu, 12 Dec 2013 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/018/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Osman Hegazy, Omar S. Soliman, Mustafa Abdul Salam&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2013&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Prediction of assets behavior in financial series using machine learning algorithms</title>
+      <link>http://localhost:8080/articles/019/</link>
+      <pubDate>Tue, 12 Nov 2013 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/019/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Diego Esteves da Silva, Julio Cesar Duarte&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2013&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Sentiment analysis on tweets and their relationship with stock market trends</title>
+      <link>http://localhost:8080/articles/014/</link>
+      <pubDate>Sat, 15 Jun 2013 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/014/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Sharma, Jay&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2013&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Web Search Queries Can Predict Stock Market Volumes</title>
+      <link>http://localhost:8080/articles/007/</link>
+      <pubDate>Tue, 19 Jun 2012 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/007/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Ilaria Bordino, Stefano Battiston, Guido Caldarelli, Matthieu Cristelli, Antti Ukkonen, Ingmar Weber1&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2012&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>When machines read the news -  Using automated text analytics to quantify high frequency news-implied market reactions</title>
+      <link>http://localhost:8080/articles/004/</link>
+      <pubDate>Tue, 07 Dec 2010 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/004/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Axel Groß-Klußmann, Nikolaus Hautsch&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2010&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Complex dynamics of our economic life on different scales insights from search engine query data</title>
+      <link>http://localhost:8080/articles/009/</link>
+      <pubDate>Mon, 15 Nov 2010 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/009/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Tobias Preis, Daniel Reith, H. Eugene Stanley&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2010&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>Automatic stock market trading based on Technical Analysis</title>
+      <link>http://localhost:8080/articles/011/</link>
+      <pubDate>Mon, 15 Oct 2007 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/011/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Fredrik Larsen&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2007&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>SentAMaL- A Sentiment Analysis Machine Learning Stock Predictive Model</title>
+      <link>http://localhost:8080/articles/005/</link>
+      <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/005/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;SA Bogle, WD Potter&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015 &lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Esperimento di implementazione di un sistema ibrido di sentiment
+analysis e algoritmi di machine learning sul mercato azionario giamaicano.&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Sono stati provati i seguenti algoritmi per classificare i tweets in base al loro &lt;em&gt;sentiment&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Naive Bayes Multinomial Text Classifier&lt;/li&gt;
+&lt;li&gt;Support Vector Machine&lt;/li&gt;
+&lt;li&gt;J48 Decision Tree&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Naive Bayes Multinomial Text è stato alla fine scelto come migliore. &lt;/p&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Circa 2000 tweets tra Gennaio e Febbraio 2015, rappresentati un campione di esempi con polarità positiva, negativa o neutra riguardo la legalizzazione della marijuana per uso medicinale.&lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;87% di &lt;em&gt;accuracy&lt;/em&gt; per la predizione del trend&lt;/li&gt;
+&lt;li&gt;0,99 di coefficiente di correlazione tra sentiment e andamento dei prezzi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Sentiment based models seem better suited for short term
+forecasts while machine learning approaches will likely
+outperform them on long term forecasts.&lt;/em&gt;    &lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    <item>
+      <title>The Effects of Twitter Sentiment on Stock Price Returns</title>
+      <link>http://localhost:8080/articles/001/</link>
+      <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/001/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Gabriele Ranco, Darko Aleksovski, Guido Caldarelli, Miha Grčar, Igor Mozetič&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Si cerca una correlazione tra il sentiment percepito tramite Twitter e l’andamento dei prezzi dei titoli sul mercato azionario.&lt;/p&gt;
+&lt;h3 id=&quot;metodo&quot;&gt;Metodo&lt;/h3&gt;
+&lt;p&gt;Si utilizza la tecnica di analisi economica &lt;a href=&quot;https://it.wikipedia.org/wiki/Event_study&quot;&gt;Event Study&lt;/a&gt;, la quale si occupa di analizzare l’andamento del mercato in un intorno di un punto temporale corrispondente ad un evento di presunta importanza, al fine di stimare di quanto tale evento ha distorto la curva dei prezzi che ci si aspettava. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;si individuano eventi rilevanti tramite l’analisi del volume dei post di Twitter&lt;/li&gt;
+&lt;li&gt;per i periodi individuati, si calcola il sentiment (&lt;em&gt;positivo&lt;/em&gt;/&lt;em&gt;negativo&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;si applica &lt;code&gt;Event Study&lt;/code&gt; rispetto agli eventi trovati&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;per-il-calcolo-del-sentiment&quot;&gt;Per il calcolo del sentiment&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;si usa apprendimento supervisionato&lt;/li&gt;
+&lt;li&gt;si approssima il sentiment in 3 valori: &lt;em&gt;negative (−)&lt;/em&gt;, &lt;em&gt;neutral (0)&lt;/em&gt; e &lt;em&gt;positive
+(+)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Indice_di_correlazione_di_Pearson&quot;&gt;Pearson correlation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Causalit%C3%A0_di_Granger&quot;&gt;Granger causality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Abnormal_return#Cumulative_abnormal_return&quot;&gt;Cumulative abnormal returns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;15 mesi di post Twitter riguardanti i 30 titoli che compongono l’indice Dow Jones. A partire da questi dati vengono calcolati &lt;strong&gt;volume&lt;/strong&gt; e &lt;strong&gt;sentiment&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;É stato osservato che non sembra esistere correlazione tra gli andamenti del sentiment di Twitter e il mercato azionario per la durata delle serie temporali. Tuttavia, limitatamente ad eventi importanti (quelli per cui si ha volume), la polarità del sentiment di Twitter implica dei &lt;code&gt;Cumulative Abnormal Returns&lt;/code&gt;, seppure solo dell’ordine di 1 o 2 punti percentuali.&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

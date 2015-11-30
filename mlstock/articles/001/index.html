@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>The Effects of Twitter Sentiment on Stock Price Returns - Machine Learning for Stock Markets
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Analisi dello stato attuale della ricerca di metodo di machine learning legati ai mercati finanziari">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- link(rel='stylesheet', href=contents.css['main.css'].url)-->
+    <script src="[object Object]"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: center;" class="header clearfix">
+        <h1 class="text-muted"> <a href="/">Machine Learning for Stock Markets</a></h1>
+        <h5>Knowledge Base</h5>
+      </div><br><br><br>
+      <div class="row marketing">
+        <article class="row">
+          <section id="notes" class="col-md-5">
+            <div><h3 id="autori">Autori</h3>
+<p>Gabriele Ranco, Darko Aleksovski, Guido Caldarelli, Miha Grčar, Igor&nbsp;Mozetič</p>
+<h3 id="anno">Anno</h3>
+<p>2015</p>
+<h3 id="in-breve">In&nbsp;breve</h3>
+<p>Si cerca una correlazione tra il sentiment percepito tramite Twitter e l’andamento dei prezzi dei titoli sul mercato&nbsp;azionario.</p>
+<h3 id="metodo">Metodo</h3>
+<p>Si utilizza la tecnica di analisi economica <a href="https://it.wikipedia.org/wiki/Event_study">Event Study</a>, la quale si occupa di analizzare l’andamento del mercato in un intorno di un punto temporale corrispondente ad un evento di presunta importanza, al fine di stimare di quanto tale evento ha distorto la curva dei prezzi che ci si&nbsp;aspettava. </p>
+<ol>
+<li>si individuano eventi rilevanti tramite l’analisi del volume dei post di&nbsp;Twitter</li>
+<li>per i periodi individuati, si calcola il sentiment (<em>positivo</em>/<em>negativo</em>)</li>
+<li>si applica <code>Event Study</code> rispetto agli eventi&nbsp;trovati</li>
+</ol>
+<h4 id="per-il-calcolo-del-sentiment">Per il calcolo del&nbsp;sentiment</h4>
+<ul>
+<li>si usa apprendimento&nbsp;supervisionato</li>
+<li>si approssima il sentiment in 3 valori: <em>negative (−)</em>, <em>neutral (0)</em> e <em>positive&nbsp;(+)</em></li>
+</ul>
+<h3 id="metriche">Metriche</h3>
+<ul>
+<li><a href="https://it.wikipedia.org/wiki/Indice_di_correlazione_di_Pearson">Pearson&nbsp;correlation</a></li>
+<li><a href="https://it.wikipedia.org/wiki/Causalit%C3%A0_di_Granger">Granger&nbsp;causality</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Abnormal_return#Cumulative_abnormal_return">Cumulative abnormal&nbsp;returns</a></li>
+</ul>
+<h3 id="dataset">Dataset</h3>
+<p>15 mesi di post Twitter riguardanti i 30 titoli che compongono l’indice Dow Jones. A partire da questi dati vengono calcolati <strong>volume</strong> e <strong>sentiment</strong>.</p>
+<h3 id="risultati">Risultati</h3>
+<p>É stato osservato che non sembra esistere correlazione tra gli andamenti del sentiment di Twitter e il mercato azionario per la durata delle serie temporali. Tuttavia, limitatamente ad eventi importanti (quelli per cui si ha volume), la polarità del sentiment di Twitter implica dei <code>Cumulative Abnormal Returns</code>, seppure solo dell’ordine di 1 o 2 punti&nbsp;percentuali.</p>
+</div>
+          </section>
+          <section id="doc" class="col-md-7"><a href="paper.pdf" target="_blank">apri in una nuova scheda »</a><br><br>
+            <object data="paper.pdf" type="application/PDF" width="100%" height="600"></object>
+          </section>
+        </article>
+      </div><br><br><br>
+    </div>
+    <footer class="footer">
+      <div class="nav"><a href="/">« Full blog</a></div>
+      <section class="copy">
+        <p>&copy; 2015 Emanuele De Cupis &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+      </section>
+    </footer>
+  </body>
+</html>
+<!--  
+body
+    .container
+      .header.clearfix
+        nav
+          ul.nav.nav-pills.pull-right
+            li.active(role='presentation')
+              a(href='#') Home
+            li(role='presentation')
+              a(href='#') About
+            li(role='presentation')
+              a(href='#') Contact
+        h3.text-muted Project name
+     
+      .row
+        block content
+    footer
+      div.content-wrap
+        block footer
+          section.about
+            //!=contents['about.md'].html
+          section.copy
+            p &copy; 2015 Emanuele De Cupis &mdash; powered by&nbsp;
+              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+              //- please leave the "powered by" if you use the design
+-->
