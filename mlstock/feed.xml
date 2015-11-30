@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning for Stock Markets</title>
-    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://localhost:8080</link>
+    <atom:link href="http://emanuele.decup.is/mlstock/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://emanuele.decup.is/mlstock</link>
     <description>Analisi dello stato attuale della ricerca di metodo di machine learning legati ai mercati finanziari</description>
     <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Biclustering Learning of Trading Rules</title>
-      <link>http://localhost:8080/articles/010/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/010/</link>
       <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/010/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/010/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Huang Qinghua, Wang Ting, Tao Dacheng, Li Xuelong&lt;/p&gt;
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>Testing Stock Market Efficiency Using Historical Trading Data and Machine Learning</title>
-      <link>http://localhost:8080/articles/012/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/012/</link>
       <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/012/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/012/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;SAMI PURMONEN, PAUL GRIFFIN&lt;/p&gt;
@@ -45,9 +45,9 @@
     </item>
     <item>
       <title>Stock trading rule discovery with an evolutionary trend following model</title>
-      <link>http://localhost:8080/articles/002/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/002/</link>
       <pubDate>Thu, 01 Oct 2015 15:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/002/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/002/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Yong Hu, Bin Feng b, Xiangzhou Zhang, E.W.T. Ngai, Mei Liu,&lt;/p&gt;
@@ -72,9 +72,9 @@
     </item>
     <item>
       <title>Stock Market Prediction using Social Media Analysis</title>
-      <link>http://localhost:8080/articles/006/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/006/</link>
       <pubDate>Sun, 26 Apr 2015 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/006/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/006/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;OSCAR ALSING, OKTAY BAHCECI&lt;/p&gt;
@@ -88,9 +88,9 @@
     </item>
     <item>
       <title>On predictability of rare events leveraging social media: a machine learning perspective</title>
-      <link>http://localhost:8080/articles/017/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/017/</link>
       <pubDate>Fri, 20 Feb 2015 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/017/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/017/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Lei Le, Emilio Ferrara, Alessandro Flammini&lt;/p&gt;
@@ -105,9 +105,9 @@
     </item>
     <item>
       <title>Coupling news sentiment with web browsing data predicts intra-day stock prices</title>
-      <link>http://localhost:8080/articles/008/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/008/</link>
       <pubDate>Mon, 05 Jan 2015 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/008/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/008/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Gabriele Ranco, Ilaria Bordino, Giacomo Bormetti, Guido Caldarelli, Fabrizio Lillo and Michele Treccani&lt;/p&gt;
@@ -122,9 +122,9 @@
     </item>
     <item>
       <title>Machine Learning Application for Stock Market Prices Prediction</title>
-      <link>http://localhost:8080/articles/020/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/020/</link>
       <pubDate>Sun, 12 Oct 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/020/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/020/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;C. Ugwu, OnwuachuUzochukwu C&lt;/p&gt;
@@ -138,27 +138,10 @@
 </description>
     </item>
     <item>
-      <title>Stream-based active learning for sentiment analysis in the financial domain</title>
-      <link>http://localhost:8080/articles/015/</link>
-      <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/015/</guid>
-      <author></author>
-      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;Smailović Jasmina, Grčar Miha, Lavrač Nada, Žnidaršič Martin&lt;/p&gt;
-&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
-&lt;p&gt;2014&lt;/p&gt;
-&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
-&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
-&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
-&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
-&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
-</description>
-    </item>
-    <item>
       <title>Sentiment Analysis for Financial Applications - Combining Machine Learning, Computational Linguistics, and Statistical Methods for Predicting Stock Price Behavior</title>
-      <link>http://localhost:8080/articles/013/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/013/</link>
       <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/013/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/013/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Lars Smørås Høysæter, Pål-Christian S Njølstad&lt;/p&gt;
@@ -172,10 +155,27 @@
 </description>
     </item>
     <item>
+      <title>Stream-based active learning for sentiment analysis in the financial domain</title>
+      <link>http://emanuele.decup.is/mlstock/articles/015/</link>
+      <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/015/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Smailović Jasmina, Grčar Miha, Lavrač Nada, Žnidaršič Martin&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
       <title>News impact on stock price return via sentiment analysis</title>
-      <link>http://localhost:8080/articles/003/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/003/</link>
       <pubDate>Sat, 26 Apr 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/003/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/003/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Xiaodong Li, Haoran Xie, Li Chen, Jianping Wang, Xiaotie Deng &lt;/p&gt;
@@ -205,9 +205,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Impact of Financial News Headline and Content to Market Sentiment</title>
-      <link>http://localhost:8080/articles/016/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/016/</link>
       <pubDate>Tue, 01 Apr 2014 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/016/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/016/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Tan Li, Phang Wai, Chin Kim, Rayner, Patricia&lt;/p&gt;
@@ -222,9 +222,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>A Machine Learning Model for Stock Market Prediction</title>
-      <link>http://localhost:8080/articles/018/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/018/</link>
       <pubDate>Thu, 12 Dec 2013 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/018/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/018/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Osman Hegazy, Omar S. Soliman, Mustafa Abdul Salam&lt;/p&gt;
@@ -239,9 +239,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Prediction of assets behavior in financial series using machine learning algorithms</title>
-      <link>http://localhost:8080/articles/019/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/019/</link>
       <pubDate>Tue, 12 Nov 2013 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/019/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/019/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Diego Esteves da Silva, Julio Cesar Duarte&lt;/p&gt;
@@ -256,9 +256,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Sentiment analysis on tweets and their relationship with stock market trends</title>
-      <link>http://localhost:8080/articles/014/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/014/</link>
       <pubDate>Sat, 15 Jun 2013 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/014/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/014/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Sharma, Jay&lt;/p&gt;
@@ -273,9 +273,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Web Search Queries Can Predict Stock Market Volumes</title>
-      <link>http://localhost:8080/articles/007/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/007/</link>
       <pubDate>Tue, 19 Jun 2012 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/007/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/007/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Ilaria Bordino, Stefano Battiston, Guido Caldarelli, Matthieu Cristelli, Antti Ukkonen, Ingmar Weber1&lt;/p&gt;
@@ -290,9 +290,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>When machines read the news -  Using automated text analytics to quantify high frequency news-implied market reactions</title>
-      <link>http://localhost:8080/articles/004/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/004/</link>
       <pubDate>Tue, 07 Dec 2010 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/004/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/004/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Axel Groß-Klußmann, Nikolaus Hautsch&lt;/p&gt;
@@ -307,9 +307,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Complex dynamics of our economic life on different scales insights from search engine query data</title>
-      <link>http://localhost:8080/articles/009/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/009/</link>
       <pubDate>Mon, 15 Nov 2010 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/009/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/009/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Tobias Preis, Daniel Reith, H. Eugene Stanley&lt;/p&gt;
@@ -324,9 +324,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>Automatic stock market trading based on Technical Analysis</title>
-      <link>http://localhost:8080/articles/011/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/011/</link>
       <pubDate>Mon, 15 Oct 2007 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/011/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/011/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Fredrik Larsen&lt;/p&gt;
@@ -341,9 +341,9 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
     </item>
     <item>
       <title>SentAMaL- A Sentiment Analysis Machine Learning Stock Predictive Model</title>
-      <link>http://localhost:8080/articles/005/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/005/</link>
       <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/005/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/005/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;SA Bogle, WD Potter&lt;/p&gt;
@@ -376,9 +376,9 @@ outperform them on long term forecasts.&lt;/em&gt;    &lt;/p&gt;
     </item>
     <item>
       <title>The Effects of Twitter Sentiment on Stock Price Returns</title>
-      <link>http://localhost:8080/articles/001/</link>
+      <link>http://emanuele.decup.is/mlstock/articles/001/</link>
       <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/001/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/001/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Gabriele Ranco, Darko Aleksovski, Guido Caldarelli, Miha Grčar, Igor Mozetič&lt;/p&gt;
