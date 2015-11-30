@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Wintersmith's blog</title>
+    <title>Machine Learning for Stock Markets</title>
     <atom:link href="http://emanuele.decup.is/mlstock//feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://emanuele.decup.is/mlstock/</link>
-    <description>Ramblings of an immor(t)al demigod</description>
+    <description>a Knowledge Base</description>
     <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
@@ -63,8 +63,8 @@
 &lt;p&gt;Differenti indici sul mercato di Shangai, dati giornalieri su 15 anni&lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;NN &amp;gt; Bayes per dati continui&lt;/li&gt;
-&lt;li&gt;Bayes &amp;gt; NN per trend su dati storici&lt;/li&gt;
+&lt;li&gt;Neural Network più performante di regressione di Bayes per dati continui&lt;/li&gt;
+&lt;li&gt;Regressione di Bayes più performante di Neural Networl per trend su dati storici&lt;/li&gt;
 &lt;li&gt;Movement prediction 100%&lt;/li&gt;
 &lt;li&gt;Price prediction 97%&lt;/li&gt;
 &lt;/ul&gt;
@@ -87,10 +87,10 @@
 </description>
     </item>
     <item>
-      <title>On predictability of rare events leveraging social media: a machine learning perspective</title>
-      <link>http://emanuele.decup.is/mlstock//mlstock/articles/017/</link>
+      <title>[da rimuovere] On predictability of rare events leveraging social media: a machine learning perspective</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/_017/</link>
       <pubDate>Fri, 20 Feb 2015 01:00:00 +0100</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/017/</guid>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/_017/</guid>
       <author></author>
       <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
 &lt;p&gt;Lei Le, Emilio Ferrara, Alessandro Flammini&lt;/p&gt;
@@ -114,10 +114,27 @@
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2015&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Utilizzo misto di &lt;em&gt;sentiment&lt;/em&gt; di notizie e &lt;em&gt;browsing activity&lt;/em&gt; degli utenti di &lt;strong&gt;Yahoo! Finance&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Si osserva che le informazioni di &lt;em&gt;sentiment&lt;/em&gt; e &lt;em&gt;browsing activity&lt;/em&gt; non sono significative se considerate singolarmente. Vengono pertanto combinate usando l’attività di navigazione come &lt;em&gt;peso&lt;/em&gt; da applicare ai valori di &lt;em&gt;sentiment&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Indice_di_correlazione_di_Pearson&quot;&gt;Pearson correlation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Causalit%C3%A0_di_Granger&quot;&gt;Granger causality&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Un set di 100 titoli del mercato USA, periodo 2012-2013. Per ogni titolo vengono considerati:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dati di mercato: &lt;em&gt;volume&lt;/em&gt;, &lt;em&gt;logarithmic price return&lt;/em&gt;, &lt;em&gt;return absolute value&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;News: notizie estratte dal portale &lt;a href=&quot;https://it.finance.yahoo.com/&quot;&gt;Yahoo! Finance&lt;/a&gt;. Le notizie sono dapprima processate da esperti che le associano ai titoli a cui fanno riferimento. Successivamente si calcola il &lt;em&gt;sentiment&lt;/em&gt; tramite il tool &lt;a href=&quot;http://sentistrength.wlv.ac.uk/&quot;&gt;SentiStrength&lt;/a&gt; con l’aggiunta di un dizionario di parole specifiche del dominio della finanza. Il &lt;em&gt;sentiment&lt;/em&gt; è espresso dai valori +1, 0 e -1.&lt;/li&gt;
+&lt;li&gt;Browsing data: time series dei click degli utenti sugli articoli.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In 69% dei casi, ad un alto volume di click corrisponde un alto volume di transazioni (e viceversa).&lt;/li&gt;
+&lt;li&gt;In 65% dei casi, ad un alto volume di click corrisponde un’alta volatilità (e viceversa).&lt;/li&gt;
+&lt;li&gt;Considerando solo il &lt;em&gt;sentiment&lt;/em&gt; non si hanno predizioni con percentuali significative (~4%), mentre utilizzando il volume dei click &lt;strong&gt;pesato&lt;/strong&gt; con il &lt;em&gt;sentiment&lt;/em&gt; si ottiene una causalità del 53% di previsione di prezzo.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -133,6 +150,10 @@
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean Squared Error&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 </description>
@@ -214,10 +235,39 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2014&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Valutazione &lt;strong&gt;lexicon-based&lt;/strong&gt; del &lt;em&gt;sentiment&lt;/em&gt; di articoli finanziari. Vengono considerati sia il &lt;em&gt;corpus&lt;/em&gt; degli articoli, sia le &lt;em&gt;headline&lt;/em&gt;, sia entrembi.&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Sentiment analysis:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Costruzione del lessico: circa 8000 parole taggate con la polarità &lt;/li&gt;
+&lt;li&gt;Data preprocessing: si elimina il rumore, e si eseguono algoritmi &lt;em&gt;stemming&lt;/em&gt; e &lt;em&gt;non-stemming&lt;/em&gt; (Porter Stemmer)&lt;/li&gt;
+&lt;li&gt;Lexicon matching and polarity detection.&lt;/li&gt;
+&lt;li&gt;Sentiment calculation: si utilizza &lt;strong&gt;P/N ratio&lt;/strong&gt;, ovvero il rapport tra i matching positivi e negativi. Il sentiment calcolato sarà compreso tra -10 e +10.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Positive predictive&lt;/li&gt;
+&lt;li&gt;Negative predictive&lt;/li&gt;
+&lt;li&gt;Sensitive&lt;/li&gt;
+&lt;li&gt;Specificity&lt;/li&gt;
+&lt;li&gt;Accurate&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Articoli finanziari da: The Star Online, The National News Agency of Malaysia (BERNAMA), The Sun Daily, and The New Straits Times (NST). Il periodo è il primo semestre 2013, circa 200 articoli. Gli articoli vengono divisi in 3 dataset:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;corpus&lt;/em&gt; di articoli&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;headline&lt;/em&gt; di articoli&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;corpus&lt;/em&gt; e &lt;em&gt;headline&lt;/em&gt; di articoli&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;Questi i migliori risultati, ottenuti valutando dataset con &lt;em&gt;corpus&lt;/em&gt; e &lt;em&gt;headline&lt;/em&gt; considerati con peso uguale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Positive predictive - 96.4%&lt;/li&gt;
+&lt;li&gt;Negative predictive - 83.3%&lt;/li&gt;
+&lt;li&gt;Sensitive - 88.5%&lt;/li&gt;
+&lt;li&gt;Specificity - 94.6%&lt;/li&gt;
+&lt;li&gt;Accuracy - 90.8%&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -231,10 +281,28 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2013&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Predizioni sul prezzo applicando apprendimento supervisionato con algoritmi di ottimizzazione su valori di mercato e indicatori di analisi tecnica.&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Least_squares_support_vector_machine&quot;&gt;Least squares support vector machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Particle_Swarm_Optimization&quot;&gt;Particle Swarm Optimization&lt;/a&gt; (per ottimizzare la selezione delle variabili di input di LS-SVM e limitare l’overfitting)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm&quot;&gt;Levenberg–Marquardt&lt;/a&gt; (per confrontare con altri algoritmi di apprendimento)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Dati di mercato: S&amp;amp;P 500 per il periodo da Gennio 2009 a Gennaio 2012. 70% usati per il training, 30% per i test.&lt;/p&gt;
+&lt;p&gt;Indicatori tecnici:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Relative Strength Index (RSI)&lt;/li&gt;
+&lt;li&gt;Money Flow Index (MFI)&lt;/li&gt;
+&lt;li&gt;Exponential Moving Average (EMA)&lt;/li&gt;
+&lt;li&gt;Stochastic Oscillator (SO)&lt;/li&gt;
+&lt;li&gt;Moving Average Convergence/Divergence (MACD)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;L’algoritmo PSO-LS-SVM risulta avere miglior performance rispetto a LS_SVM. Algoritmi di ANN risentono troppo di problemi di overfitting, e risultano essere i meno performanti.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -248,10 +316,20 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2013&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Applicazione e comparazione di differenti metodi di machine learning sul mercato brasiliano. Si usa una finestra di dati (80 giorni) per predire l’andamento futuro (high o low)&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
-&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Tendency Keeper (non ML, usato per comparazione di base)&lt;/li&gt;
+&lt;li&gt;Naive Bayes&lt;/li&gt;
+&lt;li&gt;Logistic Regression&lt;/li&gt;
+&lt;li&gt;Support Vector Machine&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Indice BOVESPA, 107 record da Gennaio 2006 a Dicembre 2006. 80% training set, 20% test.&lt;/p&gt;
+&lt;p&gt;Attributi base: &lt;em&gt;opening price (open), closing price (close), day
+maximum (max), day minimum (min) and volume (vol)&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;L’algoritmo con le migliori performance è SVM. Tuttavia, tutti gli algoritmi hanno mostrato una capacità predittiva insoddisfacente (&amp;lt;70%)&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -265,10 +343,21 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2013&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Analisi dei post di Twitter per individuare eventi iportanti e valutarne l’impatto sui mercati.&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Naive Bayes&lt;/li&gt;
+&lt;li&gt;Maximum Entropy&lt;/li&gt;
+&lt;li&gt;Support Vector Machine&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Granger causality&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Azioni Apple&lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;Si riesce a inferire il movimento dei prezzi del titolo Apple e a prevedere l’andamento del prezzo futuro di chiusura.&lt;/p&gt;
 </description>
     </item>
     <item>

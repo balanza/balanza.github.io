@@ -4,44 +4,64 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>Coupling news sentiment with web browsing data predicts intra-day stock prices - The Wintersmith's blog
+    <title>Coupling news sentiment with web browsing data predicts intra-day stock prices - Machine Learning for Stock Markets
     </title>
-    <link rel="alternate" href="http://emanuele.decup.is/mlstock//feed.xml" type="application/rss+xml" title="Ramblings of an immor(t)al demigod">
+    <link rel="alternate" href="http://emanuele.decup.is/mlstock//feed.xml" type="application/rss+xml" title="a Knowledge Base">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
     <link rel="stylesheet" href="/mlstock/css/bootstrap.css">
     <!-- link(rel='stylesheet', href=contents.css['main.css'].url)-->
     <script src="[object Object]"></script>
+    <script src="[object Object]"></script>
+    <script>$(function() { $('.eh').matchHeight(options); });</script>
   </head>
   <body>
     <div class="container">
+      <div style="text-align: center;" class="nav"><a href="/mlstock/">« back</a></div>
       <div style="text-align: center;" class="header clearfix">
-        <h1 class="text-muted"> <a href="/mlstock/">The Wintersmith's blog</a></h1>
+        <h1 class="text-muted"> <a href="/mlstock/">Machine Learning for Stock Markets</a></h1>
         <h5>Knowledge Base</h5>
       </div><br><br><br>
       <div class="row marketing">
         <article class="row">
-          <section id="notes" class="col-md-5">
+          <h1 style="text-align: center;" class="col-md-offset-2 col-md-8">Coupling news sentiment with web browsing data predicts intra-day stock prices</h1><br>
+          <section id="notes" class="col-md-5 eh"><br>
             <div><h3 id="autori">Autori</h3>
 <p>Gabriele Ranco, Ilaria Bordino, Giacomo Bormetti, Guido Caldarelli, Fabrizio Lillo and Michele&nbsp;Treccani</p>
 <h3 id="anno">Anno</h3>
 <p>2015</p>
 <h3 id="in-breve">In&nbsp;breve</h3>
+<p>Utilizzo misto di <em>sentiment</em> di notizie e <em>browsing activity</em> degli utenti di <strong>Yahoo! Finance</strong>.</p>
 <h3 id="metodi">Metodi</h3>
+<p>Si osserva che le informazioni di <em>sentiment</em> e <em>browsing activity</em> non sono significative se considerate singolarmente. Vengono pertanto combinate usando l’attività di navigazione come <em>peso</em> da applicare ai valori di <em>sentiment</em>.</p>
 <h3 id="metriche">Metriche</h3>
+<ul>
+<li><a href="https://it.wikipedia.org/wiki/Indice_di_correlazione_di_Pearson">Pearson&nbsp;correlation</a></li>
+<li><a href="https://it.wikipedia.org/wiki/Causalit%C3%A0_di_Granger">Granger&nbsp;causality</a>  </li>
+</ul>
 <h3 id="dataset">Dataset</h3>
+<p>Un set di 100 titoli del mercato <span class="caps">USA</span>, periodo 2012-2013. Per ogni titolo vengono&nbsp;considerati:</p>
+<ul>
+<li>Dati di mercato: <em>volume</em>, <em>logarithmic price return</em>, <em>return absolute&nbsp;value</em></li>
+<li>News: notizie estratte dal portale <a href="https://it.finance.yahoo.com/">Yahoo! Finance</a>. Le notizie sono dapprima processate da esperti che le associano ai titoli a cui fanno riferimento. Successivamente si calcola il <em>sentiment</em> tramite il tool <a href="http://sentistrength.wlv.ac.uk/">SentiStrength</a> con l’aggiunta di un dizionario di parole specifiche del dominio della finanza. Il <em>sentiment</em> è espresso dai valori +1, 0 e&nbsp;-1.</li>
+<li>Browsing data: time series dei click degli utenti sugli&nbsp;articoli.</li>
+</ul>
 <h3 id="risultati">Risultati</h3>
+<ul>
+<li>In 69% dei casi, ad un alto volume di click corrisponde un alto volume di transazioni (e&nbsp;viceversa).</li>
+<li>In 65% dei casi, ad un alto volume di click corrisponde un’alta volatilità (e&nbsp;viceversa).</li>
+<li>Considerando solo il <em>sentiment</em> non si hanno predizioni con percentuali significative (~4%), mentre utilizzando il volume dei click <strong>pesato</strong> con il <em>sentiment</em> si ottiene una causalità del 53% di previsione di&nbsp;prezzo.</li>
+</ul>
 </div>
           </section>
-          <section id="doc" class="col-md-7"><a href="paper.pdf" target="_blank">apri in una nuova scheda »</a><br><br>
+          <section id="doc" class="col-md-7 eh"><br><a href="paper.pdf" target="_blank">apri in una nuova scheda »</a><br><br>
             <object data="paper.pdf" type="application/PDF" width="100%" height="600"></object>
           </section>
         </article>
       </div><br><br><br>
     </div>
     <footer class="footer">
-      <div class="nav"><a href="/mlstock/">« Full blog</a></div>
       <section class="copy">
-        <p>&copy; 2015 Someone &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+        <p>&copy; 2015 Emanuele De Cupis &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
       </section>
     </footer>
   </body>
@@ -68,7 +88,7 @@ body
           section.about
             //!=contents['about.md'].html
           section.copy
-            p &copy; 2015 Someone &mdash; powered by&nbsp;
+            p &copy; 2015 Emanuele De Cupis &mdash; powered by&nbsp;
               a(href='https://github.com/jnordberg/wintersmith') Wintersmith
               //- please leave the "powered by" if you use the design
 -->
