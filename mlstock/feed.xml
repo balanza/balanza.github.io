@@ -9,6 +9,23 @@
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>Testing Stock Market Efficiency Using Historical Trading Data and Machine Learning</title>
+      <link>http://emanuele.decup.is/mlstock/articles/012/</link>
+      <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/012/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;SAMI PURMONEN, PAUL GRIFFIN&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
       <title>Biclustering Learning of Trading Rules</title>
       <link>http://emanuele.decup.is/mlstock/articles/010/</link>
       <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
@@ -24,23 +41,6 @@
 &lt;p&gt;Classificazione Nearest Neighborhood &lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 &lt;p&gt;La classificazione ottenuta ha performance migliori rispetto a &lt;em&gt;buy&amp;amp;hold&lt;/em&gt;.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Testing Stock Market Efficiency Using Historical Trading Data and Machine Learning</title>
-      <link>http://emanuele.decup.is/mlstock/articles/012/</link>
-      <pubDate>Thu, 15 Oct 2015 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/012/</guid>
-      <author></author>
-      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;SAMI PURMONEN, PAUL GRIFFIN&lt;/p&gt;
-&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
-&lt;p&gt;2015&lt;/p&gt;
-&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
-&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
-&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
-&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
-&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 </description>
     </item>
     <item>
@@ -340,41 +340,6 @@ polarity do not perform well in all the tests”&lt;/em&gt;&lt;/li&gt;
 </description>
     </item>
     <item>
-      <title>SentAMaL- A Sentiment Analysis Machine Learning Stock Predictive Model</title>
-      <link>http://emanuele.decup.is/mlstock/articles/005/</link>
-      <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/005/</guid>
-      <author></author>
-      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;SA Bogle, WD Potter&lt;/p&gt;
-&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
-&lt;p&gt;2015 &lt;/p&gt;
-&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
-&lt;p&gt;Esperimento di implementazione di un sistema ibrido di sentiment
-analysis e algoritmi di machine learning sul mercato azionario giamaicano.&lt;/p&gt;
-&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
-&lt;p&gt;Sono stati provati i seguenti algoritmi per classificare i tweets in base al loro &lt;em&gt;sentiment&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Naive Bayes Multinomial Text Classifier&lt;/li&gt;
-&lt;li&gt;Support Vector Machine&lt;/li&gt;
-&lt;li&gt;J48 Decision Tree&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Naive Bayes Multinomial Text è stato alla fine scelto come migliore. &lt;/p&gt;
-&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
-&lt;p&gt;Circa 2000 tweets tra Gennaio e Febbraio 2015, rappresentati un campione di esempi con polarità positiva, negativa o neutra riguardo la legalizzazione della marijuana per uso medicinale.&lt;/p&gt;
-&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;87% di &lt;em&gt;accuracy&lt;/em&gt; per la predizione del trend&lt;/li&gt;
-&lt;li&gt;0,99 di coefficiente di correlazione tra sentiment e andamento dei prezzi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Sentiment based models seem better suited for short term
-forecasts while machine learning approaches will likely
-outperform them on long term forecasts.&lt;/em&gt;    &lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    <item>
       <title>The Effects of Twitter Sentiment on Stock Price Returns</title>
       <link>http://emanuele.decup.is/mlstock/articles/001/</link>
       <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
@@ -409,6 +374,41 @@ outperform them on long term forecasts.&lt;/em&gt;    &lt;/p&gt;
 &lt;p&gt;15 mesi di post Twitter riguardanti i 30 titoli che compongono l’indice Dow Jones. A partire da questi dati vengono calcolati &lt;strong&gt;volume&lt;/strong&gt; e &lt;strong&gt;sentiment&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 &lt;p&gt;É stato osservato che non sembra esistere correlazione tra gli andamenti del sentiment di Twitter e il mercato azionario per la durata delle serie temporali. Tuttavia, limitatamente ad eventi importanti (quelli per cui si ha volume), la polarità del sentiment di Twitter implica dei &lt;code&gt;Cumulative Abnormal Returns&lt;/code&gt;, seppure solo dell’ordine di 1 o 2 punti percentuali.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>SentAMaL- A Sentiment Analysis Machine Learning Stock Predictive Model</title>
+      <link>http://emanuele.decup.is/mlstock/articles/005/</link>
+      <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock/articles/005/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;SA Bogle, WD Potter&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015 &lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Esperimento di implementazione di un sistema ibrido di sentiment
+analysis e algoritmi di machine learning sul mercato azionario giamaicano.&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Sono stati provati i seguenti algoritmi per classificare i tweets in base al loro &lt;em&gt;sentiment&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Naive Bayes Multinomial Text Classifier&lt;/li&gt;
+&lt;li&gt;Support Vector Machine&lt;/li&gt;
+&lt;li&gt;J48 Decision Tree&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Naive Bayes Multinomial Text è stato alla fine scelto come migliore. &lt;/p&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Circa 2000 tweets tra Gennaio e Febbraio 2015, rappresentati un campione di esempi con polarità positiva, negativa o neutra riguardo la legalizzazione della marijuana per uso medicinale.&lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;87% di &lt;em&gt;accuracy&lt;/em&gt; per la predizione del trend&lt;/li&gt;
+&lt;li&gt;0,99 di coefficiente di correlazione tra sentiment e andamento dei prezzi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Sentiment based models seem better suited for short term
+forecasts while machine learning approaches will likely
+outperform them on long term forecasts.&lt;/em&gt;    &lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
   </channel>
