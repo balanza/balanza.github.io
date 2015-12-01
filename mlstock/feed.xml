@@ -120,11 +120,47 @@ and predicted values).&lt;/li&gt;
 &lt;p&gt;Differenti indici sul mercato di Shangai, dati giornalieri su 15 anni&lt;/p&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Neural Network più performante di regressione di Bayes per dati continui&lt;/li&gt;
-&lt;li&gt;Regressione di Bayes più performante di Neural Networl per trend su dati storici&lt;/li&gt;
-&lt;li&gt;Movement prediction 100%&lt;/li&gt;
-&lt;li&gt;Price prediction 97%&lt;/li&gt;
+&lt;li&gt;Migliore di Buy&amp;amp;Hold&lt;/li&gt;
+&lt;li&gt;Migliore di Decision Tree e Neural Network, soprattutto perchè funziona meglio in tempi di &lt;a href=&quot;https://it.wikipedia.org/wiki/Mercato_rialzista_e_mercato_ribassista&quot;&gt;Bear Market&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fornisce indicazioni comprensibili agli investitori&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>The Effects of Twitter Sentiment on Stock Price Returns</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/001/</link>
+      <pubDate>Mon, 21 Sep 2015 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/001/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Gabriele Ranco, Darko Aleksovski, Guido Caldarelli, Miha Grčar, Igor Mozetič&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Si cerca una correlazione tra il sentiment percepito tramite Twitter e l’andamento dei prezzi dei titoli sul mercato azionario.&lt;/p&gt;
+&lt;h3 id=&quot;metodo&quot;&gt;Metodo&lt;/h3&gt;
+&lt;p&gt;Si utilizza la tecnica di analisi economica &lt;a href=&quot;https://it.wikipedia.org/wiki/Event_study&quot;&gt;Event Study&lt;/a&gt;, la quale si occupa di analizzare l’andamento del mercato in un intorno di un punto temporale corrispondente ad un evento di presunta importanza, al fine di stimare di quanto tale evento ha distorto la curva dei prezzi che ci si aspettava. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;si individuano eventi rilevanti tramite l’analisi del volume dei post di Twitter&lt;/li&gt;
+&lt;li&gt;per i periodi individuati, si calcola il sentiment (&lt;em&gt;positivo&lt;/em&gt;/&lt;em&gt;negativo&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;si applica &lt;code&gt;Event Study&lt;/code&gt; rispetto agli eventi trovati&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;per-il-calcolo-del-sentiment&quot;&gt;Per il calcolo del sentiment&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;si usa apprendimento supervisionato&lt;/li&gt;
+&lt;li&gt;si approssima il sentiment in 3 valori: &lt;em&gt;negative (−)&lt;/em&gt;, &lt;em&gt;neutral (0)&lt;/em&gt; e &lt;em&gt;positive
+(+)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Indice_di_correlazione_di_Pearson&quot;&gt;Pearson correlation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Causalit%C3%A0_di_Granger&quot;&gt;Granger causality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Abnormal_return#Cumulative_abnormal_return&quot;&gt;Cumulative abnormal returns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;15 mesi di post Twitter riguardanti i 30 titoli che compongono l’indice Dow Jones. A partire da questi dati vengono calcolati &lt;strong&gt;volume&lt;/strong&gt; e &lt;strong&gt;sentiment&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;É stato osservato che non sembra esistere correlazione tra gli andamenti del sentiment di Twitter e il mercato azionario per la durata delle serie temporali. Tuttavia, limitatamente ad eventi importanti (quelli per cui si ha volume), la polarità del sentiment di Twitter implica dei &lt;code&gt;Cumulative Abnormal Returns&lt;/code&gt;, seppure solo dell’ordine di 1 o 2 punti percentuali.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -205,14 +241,35 @@ and predicted values).&lt;/li&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2014&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Implemetazione di un software di analisi dei mercati in Java. L’articolo copre sia gli aspetti implementativi, utilizzando la programmazione ad oggetti, sia gli aspetti sperimentali tramite l’analisi dei risultati.&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
-&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Mean Squared Error&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;I valori delle 14 variabili vengono normalizzati per ottenere valori binari, rappresentanti l’attivazione dei neuroni di una Neural Network. Vengono poi provate differenti strutture di reti neurali, modificando il numero di neuroni appartenenti allo &lt;em&gt;hidden layer&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Mercato azionario nigeriano, periodo Gennaio 2008 - Marzo 2013. I seguenti valori sono presi in considerazione:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;opening price of day i-1&lt;/li&gt;
+&lt;li&gt;opening price of day i-2&lt;/li&gt;
+&lt;li&gt;daily high price of day i-1&lt;/li&gt;
+&lt;li&gt;daily high price of day i-2&lt;/li&gt;
+&lt;li&gt;daily low price of day i-1&lt;/li&gt;
+&lt;li&gt;daily low price of day i-2&lt;/li&gt;
+&lt;li&gt;closing price of day i-1&lt;/li&gt;
+&lt;li&gt;closing price of day i-2&lt;/li&gt;
+&lt;li&gt;trading volume of day i-1&lt;/li&gt;
+&lt;li&gt;trading volume of day i-2&lt;/li&gt;
+&lt;li&gt;gross domestic product of year i-1&lt;/li&gt;
+&lt;li&gt;gross domestic product of year i-2&lt;/li&gt;
+&lt;li&gt;inflation rate of year i-1&lt;/li&gt;
+&lt;li&gt;inflation rate of year i-2&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;The developed application does its predication of stock market prices with minimum amount of error.
+It was also observed from the experimental results that optimal prediction can be achieved by varying the
+number of the hidden neuron. The initialization scheme may be improved by estimating weights between input
+nodes and hidden nodes, instead of random initialization. Enrichment of more relevant inputs such as
+fundamental data and technical data from derivative markets may improve the predictability of the network.
+Applying Neural Network back propagation learning algorithm in training data for stock prediction has been
+shown in this paper to be an efficient tool in developing applications for stock prediction. &lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -226,14 +283,21 @@ and predicted values).&lt;/li&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2014&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Si cerca di ottenere indicazioni di acquisto/vendita a partire da stream di tweets. &lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SVM classifier, per classificare i vari tweets in categorie positve, negative, neutrali.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
-&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Granger causality&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;I cambiamenti di &lt;em&gt;sentiment&lt;/em&gt; nei post di Twitter riferiti ad uno specifico titolo possono offrire indicazioni di acquisto/vendita con qualche giorno di anticipo rispetto ai movimenti del mercato.&lt;/p&gt;
 </description>
     </item>
     <item>
-      <title>Sentiment Analysis for Financial Applications - Combining Machine Learning, Computational Linguistics, and Statistical Methods for Predicting Stock Price Behavior</title>
+      <title>[TODO] Sentiment Analysis for Financial Applications - Combining Machine Learning, Computational Linguistics, and Statistical Methods for Predicting Stock Price Behavior</title>
       <link>http://emanuele.decup.is/mlstock//mlstock/articles/013/</link>
       <pubDate>Sun, 15 Jun 2014 02:00:00 +0200</pubDate>
       <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/013/</guid>
@@ -390,6 +454,38 @@ maximum (max), day minimum (min) and volume (vol)&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     <item>
+      <title>Efficient Machine Learning Techniques for Stock Market Prediction</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/021/</link>
+      <pubDate>Tue, 12 Nov 2013 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/021/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Zahid Iqbal, R. Ilyas, W. Shahzad, Z. Mahmood and J. Anjum&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2013&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Panoramica e comparazione di differenti metodi di price prediction&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;FeedForward Neural Network&lt;/li&gt;
+&lt;li&gt;Layered Recursive Neural Network&lt;/li&gt;
+&lt;li&gt;Neural Network con de-noising wmspca&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mean Squared Error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;S&amp;amp;P500, Pakistan OLI index (un mese)&lt;/p&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pre e Post data processing hanno forte impatto sui risultati (positivo)&lt;/li&gt;
+&lt;li&gt;Miglior risultato: NN con de-noising&lt;/li&gt;
+&lt;li&gt;In generale, RNN meglio di NN&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
       <title>Sentiment analysis on tweets and their relationship with stock market trends</title>
       <link>http://emanuele.decup.is/mlstock//mlstock/articles/014/</link>
       <pubDate>Sat, 15 Jun 2013 02:00:00 +0200</pubDate>
@@ -418,7 +514,80 @@ maximum (max), day minimum (min) and volume (vol)&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     <item>
-      <title>Web Search Queries Can Predict Stock Market Volumes</title>
+      <title>Online Machine Learning Algorithms For Currency Exchange Prediction</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/022/</link>
+      <pubDate>Fri, 12 Apr 2013 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/022/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Eleftherios Soulas, Dennis Shasha&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2013&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Implementazione di un servizio per l’apprendimento on dati in real time&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;plainSGD (Stochastic Gradient Descent)&lt;/li&gt;
+&lt;li&gt;approxSGD (SGD con esempi a caso)&lt;/li&gt;
+&lt;li&gt;approxWarmSGD (approxSGD con partenza a caldo)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;abs/rel error&lt;/li&gt;
+&lt;li&gt;MSE&lt;/li&gt;
+&lt;li&gt;R^2&lt;/li&gt;
+&lt;li&gt;Precision/Recall&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;FOREX by Capital K Partners, 28 valute, 80 giorni, 100ms tick&lt;/li&gt;
+&lt;li&gt;FOREX by Hendge Fund, 3 mesi, tick 5min&lt;/li&gt;
+&lt;li&gt;Electric consumption, 4anni, 2M di valori (usato per testare gli algortimo anche con time series di altri ambiti)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+</description>
+    </item>
+    <item>
+      <title>A Machine Learning Predictive Model for the Jamaica Frontier Market</title>
+      <link>http://emanuele.decup.is/mlstock//mlstock/articles/023/</link>
+      <pubDate>Fri, 12 Apr 2013 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/023/</guid>
+      <author></author>
+      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
+&lt;p&gt;Bogle&lt;/p&gt;
+&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
+&lt;p&gt;2013&lt;/p&gt;
+&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Studio di differenti metodi sul mercato Giamaicano&lt;/p&gt;
+&lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bayes/Decision Tree&lt;/li&gt;
+&lt;li&gt;BackPropagation Neural Network&lt;/li&gt;
+&lt;li&gt;Support Vector Machine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MSE&lt;/li&gt;
+&lt;li&gt;Root Mean Sq Error&lt;/li&gt;
+&lt;li&gt;Rel/abs error&lt;/li&gt;
+&lt;li&gt;Root rel. Sq. error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;22 mesi, da 1/10 a 10711&lt;/li&gt;
+&lt;li&gt;prezzo, volume e movement (inferito tramite predittore)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Neural Network più performante di regressione di Bayes per dati continui&lt;/li&gt;
+&lt;li&gt;Regressione di Bayes più performante di Neural Networl per trend su dati storici&lt;/li&gt;
+&lt;li&gt;Movement prediction 100%&lt;/li&gt;
+&lt;li&gt;Price prediction 97%&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>[TODO] Web Search Queries Can Predict Stock Market Volumes</title>
       <link>http://emanuele.decup.is/mlstock//mlstock/articles/007/</link>
       <pubDate>Tue, 19 Jun 2012 02:00:00 +0200</pubDate>
       <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/007/</guid>
@@ -469,7 +638,7 @@ Un altro aspetto valutato è la capacità di trarre profitto dalle informazioni 
 </description>
     </item>
     <item>
-      <title>Complex dynamics of our economic life on different scales insights from search engine query data</title>
+      <title>[TODO] Complex dynamics of our economic life on different scales insights from search engine query data</title>
       <link>http://emanuele.decup.is/mlstock//mlstock/articles/009/</link>
       <pubDate>Mon, 15 Nov 2010 01:00:00 +0100</pubDate>
       <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/009/</guid>
@@ -486,7 +655,7 @@ Un altro aspetto valutato è la capacità di trarre profitto dalle informazioni 
 </description>
     </item>
     <item>
-      <title>Automatic stock market trading based on Technical Analysis</title>
+      <title>[TODO] Automatic stock market trading based on Technical Analysis</title>
       <link>http://emanuele.decup.is/mlstock//mlstock/articles/011/</link>
       <pubDate>Mon, 15 Oct 2007 02:00:00 +0200</pubDate>
       <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/011/</guid>
@@ -500,43 +669,6 @@ Un altro aspetto valutato è la capacità di trarre profitto dalle informazioni 
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
-</description>
-    </item>
-    <item>
-      <title>The Effects of Twitter Sentiment on Stock Price Returns</title>
-      <link>http://emanuele.decup.is/mlstock//mlstock/articles/001/</link>
-      <pubDate>Thu, 01 Jan 1970 01:00:02 +0100</pubDate>
-      <guid isPermaLink="true">http://emanuele.decup.is/mlstock//mlstock/articles/001/</guid>
-      <author></author>
-      <description>&lt;h3 id=&quot;autori&quot;&gt;Autori&lt;/h3&gt;
-&lt;p&gt;Gabriele Ranco, Darko Aleksovski, Guido Caldarelli, Miha Grčar, Igor Mozetič&lt;/p&gt;
-&lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
-&lt;p&gt;2015&lt;/p&gt;
-&lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
-&lt;p&gt;Si cerca una correlazione tra il sentiment percepito tramite Twitter e l’andamento dei prezzi dei titoli sul mercato azionario.&lt;/p&gt;
-&lt;h3 id=&quot;metodo&quot;&gt;Metodo&lt;/h3&gt;
-&lt;p&gt;Si utilizza la tecnica di analisi economica &lt;a href=&quot;https://it.wikipedia.org/wiki/Event_study&quot;&gt;Event Study&lt;/a&gt;, la quale si occupa di analizzare l’andamento del mercato in un intorno di un punto temporale corrispondente ad un evento di presunta importanza, al fine di stimare di quanto tale evento ha distorto la curva dei prezzi che ci si aspettava. &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;si individuano eventi rilevanti tramite l’analisi del volume dei post di Twitter&lt;/li&gt;
-&lt;li&gt;per i periodi individuati, si calcola il sentiment (&lt;em&gt;positivo&lt;/em&gt;/&lt;em&gt;negativo&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;si applica &lt;code&gt;Event Study&lt;/code&gt; rispetto agli eventi trovati&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;per-il-calcolo-del-sentiment&quot;&gt;Per il calcolo del sentiment&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;si usa apprendimento supervisionato&lt;/li&gt;
-&lt;li&gt;si approssima il sentiment in 3 valori: &lt;em&gt;negative (−)&lt;/em&gt;, &lt;em&gt;neutral (0)&lt;/em&gt; e &lt;em&gt;positive
-(+)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Indice_di_correlazione_di_Pearson&quot;&gt;Pearson correlation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://it.wikipedia.org/wiki/Causalit%C3%A0_di_Granger&quot;&gt;Granger causality&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Abnormal_return#Cumulative_abnormal_return&quot;&gt;Cumulative abnormal returns&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
-&lt;p&gt;15 mesi di post Twitter riguardanti i 30 titoli che compongono l’indice Dow Jones. A partire da questi dati vengono calcolati &lt;strong&gt;volume&lt;/strong&gt; e &lt;strong&gt;sentiment&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
-&lt;p&gt;É stato osservato che non sembra esistere correlazione tra gli andamenti del sentiment di Twitter e il mercato azionario per la durata delle serie temporali. Tuttavia, limitatamente ad eventi importanti (quelli per cui si ha volume), la polarità del sentiment di Twitter implica dei &lt;code&gt;Cumulative Abnormal Returns&lt;/code&gt;, seppure solo dell’ordine di 1 o 2 punti percentuali.&lt;/p&gt;
 </description>
     </item>
   </channel>
