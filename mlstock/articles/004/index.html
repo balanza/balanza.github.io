@@ -30,10 +30,27 @@
 <h3 id="anno">Anno</h3>
 <p>2010</p>
 <h3 id="in-breve">In&nbsp;breve</h3>
+<p>Analisi dell’impatto di notizie sull’andamento intra-day dei&nbsp;mercati.</p>
 <h3 id="metodi">Metodi</h3>
+<p>Si analizzano le time series dei valori di mercato campionati, e si cercano eventuali movimenti significativi in corrispondenza della comparsa di notizie riguardanti il titolo in esame. Le notizie esprimono, oltre al valore di <em>sentiment</em>, anche un valore di <em>novelty</em> che indica se la notizia appare per la prima volta (<code>novelty=0</code>) oppure se è una notizia ripresam aggiornata o corretta (<code>novelty&gt;0</code>). </p>
 <h3 id="metriche">Metriche</h3>
 <h3 id="dataset">Dataset</h3>
+<p>Viene usato il tool <strong>Reuters NewsScope Sentiment Engine</strong> per ottenere un flusso di notizie in tempo reale con aggregato il calcolo del <em>sentiment</em>&nbsp;relativo.</p>
+<p>Vengono inoltre usati i dati di mercato del periodo 01/03/2007 - 06/01/2008 rifertiti all’indice <span class="caps">FTSE100</span>. Tali dati vengono campionati di continuo ed aggregati in 20 intervalli&nbsp;contententi:</p>
+<ul>
+<li>money value traded, defined as trade sizes in the intervals weighted by the corresponding&nbsp;mid-quotes,</li>
+<li>average trade size, defined as the cumulated trade size divided by the corresponding number of trades per&nbsp;interval,</li>
+<li>bid-ask spread, evaluated at the endpoint of each&nbsp;interval,</li>
+<li>mid-quote returns over each&nbsp;interval,</li>
+<li>depth, defined as the volume pending at the best bid and ask level, evaluated at the endpoint of each&nbsp;interval,</li>
+<li>volatility, defined as the sum of squared mid-quote transaction returns over each&nbsp;interval,</li>
+<li>trade imbalance, defined as the difference of cumulated sizes of buyer and seller-initiated trades (identified by the Lee and
+Ready (1991) algorithm), normalized by the cumulated trade&nbsp;size,</li>
+<li>absolute trade&nbsp;imbalance.</li>
+</ul>
 <h3 id="risultati">Risultati</h3>
+<p>Gli esperimenti certificano la correlazione tra la comparsa di una notizia <strong>rilevante</strong> e movimenti significativi di mercato. Tuttavia è molto difficile selezionare quali notizie siano rilevanti o meno, in pratica l’esperimento è vittima di un <em>rumore</em> di difficile eliminazione.
+Un altro aspetto valutato è la capacità di trarre profitto dalle informazioni ricevute. A causa di un’ampia forbice bid/ask e dei costi di commissione, un <em>trader automatico</em> difficilmente riuscirebbe a trarre profitto dalle operazioni intraday segnalate&nbsp;dall’algoritmo.</p>
 </div>
           </section>
           <section id="doc" class="col-md-7 eh"><br><a href="paper.pdf" target="_blank">apri in una nuova scheda »</a><br><br>

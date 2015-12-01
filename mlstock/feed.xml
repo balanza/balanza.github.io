@@ -423,10 +423,27 @@ maximum (max), day minimum (min) and volume (vol)&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;anno&quot;&gt;Anno&lt;/h3&gt;
 &lt;p&gt;2010&lt;/p&gt;
 &lt;h3 id=&quot;in-breve&quot;&gt;In breve&lt;/h3&gt;
+&lt;p&gt;Analisi dell’impatto di notizie sull’andamento intra-day dei mercati.&lt;/p&gt;
 &lt;h3 id=&quot;metodi&quot;&gt;Metodi&lt;/h3&gt;
+&lt;p&gt;Si analizzano le time series dei valori di mercato campionati, e si cercano eventuali movimenti significativi in corrispondenza della comparsa di notizie riguardanti il titolo in esame. Le notizie esprimono, oltre al valore di &lt;em&gt;sentiment&lt;/em&gt;, anche un valore di &lt;em&gt;novelty&lt;/em&gt; che indica se la notizia appare per la prima volta (&lt;code&gt;novelty=0&lt;/code&gt;) oppure se è una notizia ripresam aggiornata o corretta (&lt;code&gt;novelty&amp;gt;0&lt;/code&gt;). &lt;/p&gt;
 &lt;h3 id=&quot;metriche&quot;&gt;Metriche&lt;/h3&gt;
 &lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+&lt;p&gt;Viene usato il tool &lt;strong&gt;Reuters NewsScope Sentiment Engine&lt;/strong&gt; per ottenere un flusso di notizie in tempo reale con aggregato il calcolo del &lt;em&gt;sentiment&lt;/em&gt; relativo.&lt;/p&gt;
+&lt;p&gt;Vengono inoltre usati i dati di mercato del periodo 01/03/2007 - 06/01/2008 rifertiti all’indice FTSE100. Tali dati vengono campionati di continuo ed aggregati in 20 intervalli contententi:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;money value traded, defined as trade sizes in the intervals weighted by the corresponding mid-quotes,&lt;/li&gt;
+&lt;li&gt;average trade size, defined as the cumulated trade size divided by the corresponding number of trades per interval,&lt;/li&gt;
+&lt;li&gt;bid-ask spread, evaluated at the endpoint of each interval,&lt;/li&gt;
+&lt;li&gt;mid-quote returns over each interval,&lt;/li&gt;
+&lt;li&gt;depth, defined as the volume pending at the best bid and ask level, evaluated at the endpoint of each interval,&lt;/li&gt;
+&lt;li&gt;volatility, defined as the sum of squared mid-quote transaction returns over each interval,&lt;/li&gt;
+&lt;li&gt;trade imbalance, defined as the difference of cumulated sizes of buyer and seller-initiated trades (identified by the Lee and
+Ready (1991) algorithm), normalized by the cumulated trade size,&lt;/li&gt;
+&lt;li&gt;absolute trade imbalance.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;risultati&quot;&gt;Risultati&lt;/h3&gt;
+&lt;p&gt;Gli esperimenti certificano la correlazione tra la comparsa di una notizia &lt;strong&gt;rilevante&lt;/strong&gt; e movimenti significativi di mercato. Tuttavia è molto difficile selezionare quali notizie siano rilevanti o meno, in pratica l’esperimento è vittima di un &lt;em&gt;rumore&lt;/em&gt; di difficile eliminazione.
+Un altro aspetto valutato è la capacità di trarre profitto dalle informazioni ricevute. A causa di un’ampia forbice bid/ask e dei costi di commissione, un &lt;em&gt;trader automatico&lt;/em&gt; difficilmente riuscirebbe a trarre profitto dalle operazioni intraday segnalate dall’algoritmo.&lt;/p&gt;
 </description>
     </item>
     <item>
