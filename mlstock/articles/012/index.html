@@ -30,10 +30,32 @@
 <h3 id="anno">Anno</h3>
 <p>2015</p>
 <h3 id="in-breve">In&nbsp;breve</h3>
+<p>Verificare la teoria economica <a href="https://en.wikipedia.org/wiki/Efficient-market_hypothesis">Efficient Market Hypotesis</a>, ovvero che il mercato contiene già tutte le info che lo riguardano e che quindi esprime già il suo&nbsp;massimo.</p>
 <h3 id="metodi">Metodi</h3>
+<ul>
+<li>Nearest Neighbour&nbsp;classifier</li>
+<li>Neural&nbsp;Network</li>
+<li>Random Forest&nbsp;classifier</li>
+<li>Linear&nbsp;regression</li>
+<li><em>Naive</em> (algoritmo <em>dummy</em> usato per comparare i risultati, nessun&nbsp;apprendimento)</li>
+</ul>
 <h3 id="metriche">Metriche</h3>
+<ul>
+<li>Absolute Percentage Error (the difference between the real values
+and predicted&nbsp;values).</li>
+<li>Movement accuracy (the measurement is the percentage of predicted movements that are&nbsp;correct).</li>
+<li>Investment profit (the value represents using the output of one of the predictors to buy&nbsp;stocks).</li>
+</ul>
 <h3 id="dataset">Dataset</h3>
+<p>Dati di mercato giornalieri per gli indici S&amp;P500 e&nbsp;<span class="caps">FTSE</span>.</p>
 <h3 id="risultati">Risultati</h3>
+<p>Rispetto alle metriche utilizzate, questi sono i risultati&nbsp;dell’esperimento:</p>
+<ul>
+<li>Absolute Percentage Error: gli algoritmi di <span class="caps">ML</span> producono errori &lt;1%. Tuttavia, siccome l’algoritmo <em>Naive</em> si comporta decisamente meglio, la conclusione è che <span class="caps">ML</span> non offre vantaggi nella predizione del valore di&nbsp;mercato.   </li>
+<li>Movement accuracy: gli algoritmi di <span class="caps">ML</span> hanno una precisione dell’ordine di 50%, comunque meno di <em>Naive</em> a&nbsp;56%.</li>
+<li>Investment profit: sebbene tutti gli algoritmi di <span class="caps">ML</span> abbiano un ritorno positivo su S&amp;P500, l’algoritmo <em>Naive</em> (che si limita a seguire l’indice) ha risultati migliori. Inoltre, se venissero considerate le <em>fee</em> di transazione, le simulazioni avrebbero esito&nbsp;negativo.</li>
+</ul>
+<p>La conclusione è che nessuno degli algoritmi di machine learning proposti ha ottenuto prestazioni migliori rispetto all’algoritmo <em>Naive</em> che non implementa tecniche di apprendimento ma si limita a seguire il trend del&nbsp;mercato.</p>
 </div>
           </section>
           <section id="doc" class="col-md-7 eh"><br><a href="paper.pdf" target="_blank">apri in una nuova scheda »</a><br><br>
