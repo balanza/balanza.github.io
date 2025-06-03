@@ -16,18 +16,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-defaults:
-  - scope:
-      path: "notes"
-      type: "notes"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-
 timezone: Europe/Rome
 
 author: "Emanuele De Cupis"
