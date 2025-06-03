@@ -18,8 +18,8 @@ exclude:
 
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: "notes"
+      type: "notes"
     values:
       layout: "post"
   - scope:
