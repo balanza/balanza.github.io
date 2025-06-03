@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Tests and the QA
+date: 2025-06-03
 ---
 
 # Tests and the QA
