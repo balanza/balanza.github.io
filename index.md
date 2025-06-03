@@ -1,7 +1,15 @@
-# Balanza
+---
+layout: default
+title: Home
+---
 
-## Whoami
+# My Notes
 
-## Notes
-
-* [_2025·06·03_ Tests and the QA](notes/20250603_tests_and_the_qa.md)
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span style="color: #888;">({{ post.date | date: "%Y-%m-%d" }})</span>
+    </li>
+  {% endfor %}
+</ul>
