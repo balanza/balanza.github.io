@@ -1,6 +1,7 @@
 ---
 title: Tests and the QA
 date: 2025-06-03
+layout: default
 ---
 
 # Tests and the QA
