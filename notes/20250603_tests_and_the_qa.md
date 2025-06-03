@@ -1,3 +1,8 @@
+---
+layout: post
+title: Tests and the QA
+---
+
 # Tests and the QA
 
 I recently had a chat with a developer friend about QA (that's _quality assurance_ for those who avoid corporate jargon). He shared some challenges his team was facing while trying to integrate their QA team into their development process.
