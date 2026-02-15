@@ -1,0 +1,13 @@
+{
+    "siteTitle": "a.k.a.balanza",
+    "siteAuthor": "Emanuele De Cupis",
+    "siteDescription": "Italian software engineer here. Writing for the sake of writing about programming, the software industry, a bit of my life and whatever else I find interesting. Mostly in English.",
+    "siteUrl": "https://emanuele.decup.is",
+    "contacts": {
+        "email": "emanuele@decup.is",
+        "mastodon": "@emanuele@mastodon.uno",
+        "github": "github.com/balanza",
+        "linkedin": "linkedin.com/in/emanueledecupis",
+        "bluesky": "@akabalanza.bsky.social"
+    }
+}
