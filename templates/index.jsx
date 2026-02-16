@@ -12,6 +12,7 @@ export function renderIndex(posts) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>{siteTitle}</title>
           <link rel="stylesheet" href="style.css" />
+          <link rel="alternate" type="application/rss+xml" title={siteTitle} href="/feed.xml" />
         </head>
         <body>
           <div className="container">

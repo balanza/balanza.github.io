@@ -20,6 +20,7 @@ export function renderPost(post) {
             {post.title} — {siteTitle}
           </title>
           <link rel="stylesheet" href="../style.css" />
+          <link rel="alternate" type="application/rss+xml" title={siteTitle} href="/feed.xml" />
         </head>
         <body>
           <div className="container">

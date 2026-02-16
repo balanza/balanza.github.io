@@ -3,6 +3,9 @@ import { join, basename } from "node:path";
 import { build as esbuild } from "esbuild";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+const config = require("../config.json");
 
 const POSTS_DIR = "posts";
 const STATIC_DIR = "static";
@@ -65,6 +68,43 @@ for (const post of posts) {
 // Generate index
 const indexHtml = renderIndex(posts);
 await writeFile(join(OUT_DIR, "index.html"), String(indexHtml));
+
+// Generate RSS feed
+function escapeXml(s) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+const rssItems = posts.map((post) => {
+  const pubDate = post.date.toUTCString();
+  const link = `${config.siteUrl}/posts/${post.slug}.html`;
+  return `    <item>
+      <title>${escapeXml(post.title)}</title>
+      <link>${link}</link>
+      <guid>${link}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description>${escapeXml(post.description)}</description>
+    </item>`;
+}).join("\n");
+
+const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(config.siteTitle)}</title>
+    <link>${config.siteUrl}</link>
+    <description>${escapeXml(config.siteDescription)}</description>
+    <language>en</language>
+    <atom:link href="${config.siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>
+${rssItems}
+  </channel>
+</rss>
+`;
+
+await writeFile(join(OUT_DIR, "feed.xml"), rssFeed);
 
 // Copy static files
 await cp(STATIC_DIR, OUT_DIR, { recursive: true });
