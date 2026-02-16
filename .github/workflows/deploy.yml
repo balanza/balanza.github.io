@@ -22,9 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Parse tool versions
+        uses: endorama/asdf-parse-tool-versions@v1
+        id: versions
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: ${{ fromJSON(steps.versions.outputs.tools).nodejs }}
           cache: npm
 
       - run: npm ci
