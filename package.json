@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "node engine/build.js",
-    "serve": "node engine/build.js && node engine/serve.js"
+    "serve": "node engine/build.js && node engine/serve.js",
+    "new": "node engine/new.js"
   },
   "dependencies": {
     "esbuild": "^0.25.0",
