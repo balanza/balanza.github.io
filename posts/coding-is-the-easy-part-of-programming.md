@@ -1,6 +1,7 @@
 ---
 title: "Coding is the easy part of programming, again"
 date: 2026-02-15
+status: published
 ---
 
 ## "Coding is the easy part of programming"
