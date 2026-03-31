@@ -23,11 +23,11 @@ body {
 
 /* Post page headings */
 .post-content h1,
+.post-content h2,
 article > header h1 {
   color: #ff80ff;
 }
 
-.post-content h2,
 .post-content h3,
 .post-content h4 {
   color: #55ffff;
@@ -41,7 +41,7 @@ h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
