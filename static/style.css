@@ -24,7 +24,7 @@ body {
 /* Post page headings */
 .post-content h1,
 .post-content h2,
-article > header h1 {
+article>header h1 {
   color: #ff80ff;
 }
 
@@ -59,15 +59,21 @@ h3 {
 
 a {
   color: #55ffff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #39d4d4;
+  background-color: #21252b;
 }
 
 p {
   margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: normal;
+  color: #55ffff;
 }
 
 ul,
