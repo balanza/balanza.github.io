@@ -7,10 +7,10 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
+  font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "SF Mono", "Cutive Mono",
+    Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #d2d9e6;
   background-color: #282c34;
   padding: 2rem 1rem;
@@ -72,7 +72,7 @@ p {
 }
 
 strong {
-  font-weight: normal;
+  font-weight: bold;
   color: #55ffff;
 }
 
