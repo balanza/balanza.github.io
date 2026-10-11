@@ -9,7 +9,7 @@
 body {
   font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "SF Mono", "Cutive Mono",
     Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.6;
   color: #d2d9e6;
   background-color: #282c34;
@@ -19,6 +19,10 @@ body {
 .container {
   max-width: 720px;
   margin: 0 auto;
+}
+
+.post-content {
+  font-size: 1rem;
 }
 
 /* Post page headings */
