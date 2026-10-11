@@ -10,8 +10,8 @@ wrote to help me reasoning on codebases.
 ## In a nutshell
 
 While interacting with [Pi](https://pi.dev), it can show a UI through which I can navigate the code we are discussing, with my real full
-editor (LazyVim in my case) just aside from the conversation. The UI is a basic tour of the code that the agent composes
-with the angle of the discussion we are having. It can overview the codebase, drill down into the underlying machinery,
+editor straight from inside the conversation. The UI is a basic tour of the code that the agent composes
+with the angle of the discussion we are having. It can overview the codebase, drill down into the building machinery,
 or trace the chain of calls from an API request through the actual state transformation.
 
 Given the right context, the tour is composed so that I can navigate the code with a storytelling approach that
