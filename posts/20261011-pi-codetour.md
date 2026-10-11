@@ -4,12 +4,12 @@ date: 2026-10-11
 status: published
 ---
 
-[pi-codetour](https://github.com/balanza/pi-codetour) is an extension for the [pi](https://pi.dev) coding agent that I
+[pi-codetour](https://github.com/balanza/pi-codetour) is an extension for the [Pi](https://pi.dev) coding agent that I
 wrote to help me reasoning on codebases. 
 
 ## In a nutshell
 
-While interacting with `pi`, it can show a UI through which I can navigate the code we are discussing, with my real full
+While interacting with [Pi](https://pi.dev), it can show a UI through which I can navigate the code we are discussing, with my real full
 editor (LazyVim in my case) just aside from the conversation. The UI is a basic tour of the code that the agent composes
 with the angle of the discussion we are having. It can overview the codebase, drill down into the underlying machinery,
 or trace the chain of calls from an API request through the actual state transformation.
