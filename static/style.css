@@ -6,10 +6,40 @@
   padding: 0;
 }
 
+/*
+ * Root type size.
+ *
+ * A gentle fluid scale: 16px on the smallest screens, up to 19px on a large
+ * one. Every other size in this file is in rem, so the whole page follows it.
+ */
+html {
+  font-size: clamp(16px, calc(15.5px + 0.25vw), 19px);
+}
+
+/*
+ * Phones that are handed a desktop-width layout.
+ *
+ * Some browsers lay a page out in a ~980px "desktop" viewport even on a phone
+ * (Firefox Android's "Desktop site", or any engine that ignores
+ * <meta name="viewport">). The result is painted 1:1 in *device* pixels, so a
+ * 16px font lands as 16 tiny device pixels and the page looks like a shrunken
+ * desktop.
+ *
+ * A coarse pointer on a very dense screen is a phone, not a desktop. There we
+ * size the root from the viewport instead of from the CSS pixel: the layout
+ * keeps phone proportions (~35 characters per line) and the type keeps a
+ * phone-sized physical height, whether the browser reports 360px or 980px.
+ * (Above 2.5dppx, so tablets and touch laptops are left alone.)
+ */
+@media (pointer: coarse) and (min-width: 900px) and (min-resolution: 2.5dppx) {
+  html {
+    font-size: clamp(24px, 4.4vw, 46px);
+  }
+}
+
 body {
   font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "SF Mono", "Cutive Mono",
     Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 16px;
   line-height: 1.6;
   color: #d2d9e6;
   background-color: #282c34;
@@ -17,7 +47,8 @@ body {
 }
 
 .container {
-  max-width: 720px;
+  /* 44rem = 720px at the 16px base, and it grows with the root size above. */
+  max-width: 44rem;
   margin: 0 auto;
 }
 
