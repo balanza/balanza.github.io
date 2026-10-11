@@ -13,6 +13,7 @@ const MIME = {
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".svg": "image/svg+xml",
+  ".woff2": "font/woff2",
 };
 
 const server = createServer(async (req, res) => {
